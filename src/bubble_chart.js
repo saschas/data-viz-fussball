@@ -1,3 +1,39 @@
+var countries = [
+   {name: "frankreich", x: 0.194, y: 0.548, r: 5.8, wins: 3},
+   {name: "england", x: 0.144, y: 0.401, r: 3.9, wins: 3},
+   {name: "deutschland", x: 0.348, y: 0.475, r: 6.1, wins: 3},
+   {name: "italien", x: 0.376, y: 0.640, r: 4.2, wins: 2},
+   {name: "belgien", x: 0.242, y: 0.477, r: 1.8, wins: 3},
+   {name: "portugal", x: 0.028, y: 0.734, r: 2.3, wins: 3},
+   {name: "spanien", x: 0.117, y: 0.655, r: 6.1, wins: 3},
+   {name: "rumänien", x: 0.600, y: 0.628, r: 4.0, wins: 0},
+   {name: "russland", x: 0.882, y: 0.252, r: 14, wins: 3},
+   {name: "ukraine", x: 0.720, y: 0.529, r: 7.6, wins: 3},
+   {name: "tschechien", x: 0.446, y: 0.494, r: 2.2, wins: 3},
+   {name: "island", x: 0.060, y: 0.163, r: 2.3, wins: 3},
+   {name: "albanien", x: 0.521, y: 0.771, r: 1.8, wins: 3},
+   {name: "wales", x: 0.101, y: 0.444, r: 1.6, wins: 3},
+   {name: "polen", x: 0.517, y: 0.433, r: 4.8, wins: 1},
+   {name: "türkei", x: 0.895, y: 0.766, r: 6.9, wins: 3},
+   {name: "irland", x: 0.073, y: 0.409, r: 2.3, wins: 3},
+   {name: "österreich", x: 0.422, y: 0.556, r: 2.3, wins: 3},
+   {name: "schweiz", x: 0.307, y: 0.565, r: 2.3, wins: 3},
+   {name: "slowakei", x: 0.530, y: 0.523, r: 2.7, wins: 3},
+   {name: "nordirland", x: 0.089, y: 0.361, r: 2.3, wins: 3},
+   {name: "kroatien", x: 0.475, y: 0.716, r: 2.3, wins: 3},
+   {name: "schweden", x: 0.469, y: 0.208, r: 4.0, wins: 3},
+   {name: "ungarn", x: 0.504, y: 0.645, r: 3.5, wins: 3},
+   {name: "niederlande", x: 0.253, y: 0.435, r: 1.6, wins: 4},
+   {name: "griechenland", x: 0.608, y: 0.83, r: 3.2, wins: 3},
+   {name: "dänemark", x: 0.332, y: 0.390, r: 1.6, wins: 3},
+   {name: "bulgarien", x: 0.647, y: 0.716, r: 2.9, wins: 3},
+   {name: "schottland", x: 0.136, y: 0.325, r: 2.3, wins: 3},
+   {name: "lettland", x: 0.624, y: 0.318, r: 1.6, wins: 3},
+   {name: "slowenien", x: 0.489, y: 0.575, r: 2.4, wins: 3},
+   {name: "norwegen", x: 0.376, y: 0.247, r: 4.0, wins: 3},
+   {name: "finnland", x: 0.589, y: 0.198, r: 5., wins: 39}
+];
+
 function Ball(r, p, v) {
   this.radius = r;
   this.point = p;
@@ -112,14 +148,15 @@ Ball.prototype = {
 //--------------------- main ---------------------
 
 var balls = [];
-var numBalls = 18;
+var numBalls = countries.length;
+var radiusFactor = view.size.width/120 * view.size.height/1200;
 for (var i = 0; i < numBalls; i++) {
-  var position = Point.random() * view.size;
+  var position = new Point(countries[i].x/1.5, countries[i].y/1.5) * view.size + view.size/6;
   var vector = new Point({
     angle: 0,
     length: 0
   });
-  var radius = Math.random() * 50 + 50;
+  var radius = countries[i].r * radiusFactor;
   balls.push(new Ball(radius, position, vector));
 }
 
@@ -133,3 +170,17 @@ function onFrame() {
     balls[i].iterate();
   }
 }
+
+$('#show-wins-button').click(function(e) {
+  for (var i = 0; i < numBalls; i++) {
+    balls[i].radius = countries[i].wins * radiusFactor;
+    balls[i].updateBounds();
+  }
+});
+
+$('#show-start-button').click(function(e) {
+  for (var i = 0; i < numBalls; i++) {
+    balls[i].radius = countries[i].r * radiusFactor;
+    balls[i].updateBounds();
+  }
+});
