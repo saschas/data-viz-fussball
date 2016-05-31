@@ -39,7 +39,7 @@ function Ball(r, p, v) {
   this.point = p;
   this.vector = v;
   this.maxVec = 15;
-  this.numSegment = Math.floor(r / 3 + 2);
+  this.numSegment = 30;
   this.boundOffset = [];
   this.boundOffsetBuff = [];
   this.sidePoints = [];
@@ -52,7 +52,7 @@ function Ball(r, p, v) {
     blendMode: 'lighter'
   });
 
-  for (var i = 0; i < this.numSegment; i ++) {
+  for (var i = 0; i < this.numSegment ; i ++) {
     this.boundOffset.push(this.radius);
     this.boundOffsetBuff.push(this.radius);
     this.path.add(new Point());
