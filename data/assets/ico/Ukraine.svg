@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 18.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 291 291" enable-background="new 0 0 291 291" xml:space="preserve">
+<g id="Ukraine">
+	<circle fill="#F0D055" cx="145.5" cy="145.5" r="145.5"/>
+	<g>
+		<defs>
+			<circle id="SVGID_51_" cx="145.5" cy="145.5" r="145.5"/>
+		</defs>
+		<clipPath id="SVGID_2_">
+			<use xlink:href="#SVGID_51_"  overflow="visible"/>
+		</clipPath>
+		<g clip-path="url(#SVGID_2_)">
+			<line fill="none" stroke="#112C70" stroke-width="6" stroke-miterlimit="10" x1="-48.8" y1="2.1" x2="339.2" y2="2.1"/>
+			<line fill="none" stroke="#112C70" stroke-width="6" stroke-miterlimit="10" x1="-48.8" y1="33.1" x2="339.2" y2="33.1"/>
+			<line fill="none" stroke="#112C70" stroke-width="6" stroke-miterlimit="10" x1="-48.8" y1="63.1" x2="339.2" y2="63.1"/>
+		</g>
+	</g>
+</g>
+</svg>
