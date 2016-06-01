@@ -3,8 +3,28 @@
 
 var statistikKey = 'gegentore';
 var maxHelper = {};
-var maxRadius = 20;
+var maxRadius = 70;
+var minRadius = 10;
 var visualisationData = {};
+
+var options = [
+'tore',
+'gegentore',
+'spielanzahl',
+'alter',
+'rot',
+'gelb',
+'qualifikationen',
+'marktwert',
+'kader',
+'punkte',
+'siege',
+'gastgeber',
+'twitter',
+'landsize'
+]
+
+
 //_____________________________________ Load external Data
 
 var xmlhttp = new XMLHttpRequest();
@@ -97,7 +117,14 @@ function buildCircle (holder,opt) {
     holder.setAttribute('name', opt.key)
 
     console.log(visualisationData,[opt.key]);
-    c.radius = maxRadius * opt.radius / 100;
+
+    if(opt.radius >= minRadius){
+      c.radius = maxRadius * opt.radius / 100;
+     
+    }else {
+      c.radius = maxRadius * minRadius / 100;
+    }
+    
   holder.appendChild(c);
   c.setAttribute('cx' , opt.x);
   c.setAttribute('cy' , opt.y);
@@ -120,8 +147,13 @@ function getPercentageOfKey(key , curr ){
 
 function buildDataViz(data){
   var xmlns = "http://www.w3.org/2000/svg";
-  var boxWidth = 1000;
-  var boxHeight = 1000;
+  var boxWidth = 1200;
+  var boxHeight = 1200;
+
+  var offset = {
+    x : 100,
+    y : 100,
+  }
 
   var svgElem = document.createElementNS (xmlns, "svg");
       svgElem.setAttributeNS (null, "viewBox", "0 0 " + boxWidth + " " + boxHeight);
@@ -137,10 +169,12 @@ function buildDataViz(data){
   for(key in data){
 
     if(key !== 'name'){
+      console.log(data[key].x,data[key].y)
+
       opt = {
           key : statistikKey,
-          x:  Math.random()* window.innerWidth,
-          y : Math.random()* window.innerHeight,
+          x:  data[key].x + offset.x,
+          y : data[key].y + offset.y,
           radius: getPercentageOfKey(statistikKey, data[key]),
           name : key
       }
@@ -178,21 +212,7 @@ function changeKey(targetKey){
   }
 }
 
-var options = [
-'tore',
-'gegentore',
-'spielanzahl',
-'alter',
-'rot',
-'gelb',
-'qualifikationen',
-'marktwert',
-'kader',
-'punkte',
-'siege',
-'gastgeber',
-'twitter'
-]
+
 
 var buttonHolder = document.getElementById('options');
 options.forEach(function(o,index) {
@@ -224,8 +244,12 @@ function animateValues(start,target, object ){
   var tween = new TWEEN.Tween(initValue)
       .to(endValue, 1000)
       .onUpdate(function() {
-        if(this.wert >= 0){
+
+        console.log(this.wert);
+        if(this.wert >= minRadius){
          object.setAttribute('r', maxRadius * this.wert / 100 )
+        }else {
+          object.setAttribute('r', maxRadius * minRadius / 100 );
         }
       }).easing(TWEEN.Easing.Back.In).start();
 
