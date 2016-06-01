@@ -6,13 +6,13 @@
 }
 
 html, body {
+    width:100%;
 	height: 100%;
 	}
 
 body,div,h1,h2,p {
     padding: 0;
     margin: 0;
-}
 
 
 body{
@@ -24,6 +24,32 @@ body{
   overflow:auto;
   background:#1d1c28;
 }
+
+
+/////////////////////////NAV
+
+
+nav{
+      position: absolute;
+      top:0;
+      z-index: 9;
+    }
+
+.holder {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 100%;
+      height: 100%;
+      transform-style: preserve-3d;
+      perspective: 1px;
+  }
+  .bubbles{
+    border-radius: 50%;
+    background-size: cover;
+  }
 
 
 
@@ -59,7 +85,6 @@ fill:lightblue;
 button{
 position:relative;
 z-index:2;
-margin:4%;
 }
 
 circle.active{
