@@ -5,17 +5,34 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="css/style.css">
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
 
+<div id="intro">
+  <div class="intro-logo">
+  <img src="img/logo.svg">
+  </div>
+</div>
+
   <nav id="options">
-    <button id="getInfo">export positions</button>
+
+  <div class="logo">
+  <img src="img/logo.svg">
+  </div>
+
+  <button style="display:none" id="getInfo">export positions</button>
   </nav>
+
+<div class="map">
+<img id="map" src="img/map-01.svg">
+</div>
 
 </body>
 
   <script type="text/javascript" src="assets/js/tween.js"></script>
+  <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.15.0/TweenMax.min.js"></script>
   <script type="text/javascript" src="assets/js/loadData.js"></script>
   <script type="text/javascript" src="js/functions.js"></script>
 

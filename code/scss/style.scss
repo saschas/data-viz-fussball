@@ -2,23 +2,23 @@
 
 * {
   box-sizing: border-box;
-
 }
 
 html, body {
     width:100%;
 	height: 100%;
+	  overflow:hidden;
 	}
 
 body,div,h1,h2,p {
     padding: 0;
     margin: 0;
-
+}
 
 body{
   height:100%;
   width:100%;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
   -webkit-font-smoothing: antialiased;
   text-rendering: geometricPrecision;
   overflow:auto;
@@ -26,16 +26,87 @@ body{
 }
 
 
+
+/////////////////////////INTRO
+
+@keyframes logo-in {
+  from {
+    transform:scale(.48);
+  }
+  to {
+    transform:scale(1);
+  }
+}
+
+@keyframes logo-out {
+  from {
+    opacity:1;
+  }
+  to {
+    opacity:0;;
+  }
+}
+
+@keyframes bubbles {
+  from {
+    transform:scale(0);
+  }
+  to {
+    transform:scale(1);
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity:0;
+  }
+  to {
+    opacity:1;
+  }
+}
+
+#intro{
+   animation: logo-in 1.48s ease-in-out .4s forwards, logo-out .48s ease-in-out 3s forwards;
+   transform:scale(.48);
+   position:absolute;
+   width:100%;
+   height:100%;
+   
+.intro-logo{
+  position:absolute;
+  width:400px;
+  height:400px;
+  left:0;
+  right:0;
+  top:0;
+  bottom:0;
+  margin:auto;
+
+  img{
+  width:100%;
+  transform:translateY(10%);
+  }
+
+}
+}
+
 /////////////////////////NAV
 
 
 nav{
+      animation: fade .48s ease-in-out 6s forwards;
+      opacity:0;
       position: absolute;
       top:0;
       z-index: 9;
+      width:134px;
+      padding:4% 2%;
+      
+
     }
 
 .holder {
+
       position: absolute;
       top: 0;
       left: 0;
@@ -45,72 +116,74 @@ nav{
       height: 100%;
       transform-style: preserve-3d;
       perspective: 1px;
+      overflow:hidden;
+      //transform:scale(.8);
   }
-  .bubbles{
+  .bubbles{   
+    animation: fade 0s ease-in-out 3.7s forwards, bubbles 2s ease-in-out 3.6s forwards;
+    opacity:0;
     border-radius: 50%;
     background-size: cover;
+
+    
   }
 
 
-
-/////////////////////////SVG
-
-
-svg{
-width:100%;
-height:100%;
-max-width:1148px;
-position:absolute;
-margin:auto;
-left:0;
-right:0;
-padding:4%;
-
-circle:hover{
-fill:lightgrey!important;
-transition:.2s ease-in-out;
-}
-
-#frankreich{
-fill:lightblue;
-
-}
-
-}
-
-
-
-/////////////////////////BUTTON
 
 button{
 position:relative;
 z-index:2;
+background:#424760;
+border: none;
+width:170px;
+height:28px;
+display:block;
+text-align:left;
+padding-left:12px;
+margin-bottom:4px;
+color:#ddd;
+text-transform:uppercase;
+font-size:.7em;
+letter-spacing:.1em;
+font-weight:200;
+cursor:pointer;
+transition:.1s ease-in-out;
+border-left: 28px solid #2c344f;
 }
 
-circle.active{
-r:20;
-transition:1s ease-in-out;
+  button:hover{
+  border-left: 28px solid #34c6aa;  
+  }
+
+  button:active,button:focus{
+  border-left: 28px solid #34c6aa; 
+  outline: none;
+  }
+
+
+.logo{
+width:150px;
+transform: translateX( calc((170px - 150px) / 2) );
+padding-bottom:40px;
+
+   img{
+  width:100%;
+
+}
 }
 
 
+/////////////////////////BACKGROUND
 
-/////////////////////////INFO
 
-.info{
+.map{
 
-display:none;
-position:fixed;
-right:0;
-padding:4%;
+ img{
+ width:100%;
+ height:100%;
+ top:0;
+ bottom:0;
+ position:absolute;
 
-h2{
-font-size:1em;
-color:#205475;
-}
-
-p{
-font-size:.8em;
-color:#335a72;
-}
-
+ }
 }

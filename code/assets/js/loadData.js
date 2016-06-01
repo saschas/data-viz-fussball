@@ -150,8 +150,8 @@ function helperFunction(svg){
 
 var statistikKey = 'tore';
 var maxHelper = {};
-var maxRadius = 90;
-var minRadius = 0;
+var maxRadius = 148;
+var minRadius = 10;
 var visualisationData = {};
 
 var options = [
@@ -346,8 +346,8 @@ function buildDataViz(data){
   var boxHeight = 1200;
 
   var offset = {
-    x : 100,
-    y : 100,
+    x : 66,
+    y : 0,
   }
 
 
@@ -475,7 +475,7 @@ function animateValues(start,target, object ){
           object.style.height = maxRadius * minRadius / 100  + 'px';
           //object.setAttribute('r', maxRadius * minRadius / 100 );
         }
-      }).easing(TWEEN.Easing.Back.In).start();
+      }).easing(TWEEN.Easing.Quadratic.InOut).start();
 
 }
 
@@ -485,12 +485,15 @@ function animateValues(start,target, object ){
 requestAnimationFrame(animate);
 
 function animate(time) {
-    requestAnimationFrame(animate);
-    TWEEN.update(time);
+    requestAnimationFrame(animate)
+;    TWEEN.update(time);
 }
 
 
 
 
 
+TweenMax.set("#map", {scale:2})
 
+tl = new TimelineLite();
+  tl.to("#map", 4.4, {transformOrigin: "center center", scale:0.8, ease:Sine.easeIn})
