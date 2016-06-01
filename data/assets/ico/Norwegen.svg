@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 18.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 291 291" enable-background="new 0 0 291 291" xml:space="preserve">
+<g id="Norwegen">
+	<circle fill="#D31713" cx="145.5" cy="145.5" r="145.5"/>
+	<g>
+		<defs>
+			<circle id="SVGID_45_" cx="145.5" cy="145.5" r="145.5"/>
+		</defs>
+		<clipPath id="SVGID_2_">
+			<use xlink:href="#SVGID_45_"  overflow="visible"/>
+		</clipPath>
+		<g clip-path="url(#SVGID_2_)">
+			<line fill="none" stroke="#112C70" stroke-width="20" stroke-miterlimit="10" x1="264" y1="-34.8" x2="264" y2="346.2"/>
+			<line fill="none" stroke="#112C70" stroke-width="20" stroke-miterlimit="10" x1="26" y1="-26.8" x2="26" y2="354.2"/>
+		</g>
+	</g>
+</g>
+<g id="Slowenien">
+	<g>
+		<defs>
+			<circle id="SVGID_69_" cx="145.7" cy="-248.5" r="145.5"/>
+		</defs>
+		<clipPath id="SVGID_4_">
+			<use xlink:href="#SVGID_69_"  overflow="visible"/>
+		</clipPath>
+		<polygon clip-path="url(#SVGID_4_)" fill="#BBE8EF" points="0,-244.3 41,-298.8 83.2,-244.3 145,-329.8 196.9,-244.3 244,-273.8 
+			320.7,-161.8 244.4,45.2 -78,45.2 		"/>
+	</g>
+</g>
+</svg>

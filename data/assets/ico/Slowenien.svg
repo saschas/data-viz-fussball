@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 18.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 291 291" enable-background="new 0 0 291 291" xml:space="preserve">
+<g id="Slowenien">
+	<circle fill="#01A6C6" cx="145.5" cy="145.5" r="145.5"/>
+	<g>
+		<defs>
+			<circle id="SVGID_69_" cx="145.5" cy="145.5" r="145.5"/>
+		</defs>
+		<clipPath id="SVGID_2_">
+			<use xlink:href="#SVGID_69_"  overflow="visible"/>
+		</clipPath>
+		<polygon clip-path="url(#SVGID_2_)" fill="#BBE8EF" points="-0.1,149.7 40.8,95.2 83,149.7 144.8,64.2 196.7,149.7 243.8,120.2 
+			320.5,232.2 244.2,439.2 -78.2,439.2 		"/>
+	</g>
+</g>
+</svg>
