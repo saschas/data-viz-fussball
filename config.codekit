@@ -4,7 +4,7 @@
 "files": {
 	"\/code\/css\/style.css": {
 		"fileType": 16,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/code\/css\/style.css",
 		"outputAbbreviatedPath": "No Output Path",
@@ -223,7 +223,7 @@
 	"bowerAbbreviatedPath": "",
 	"displayValue": "data-viz-fussball",
 	"displayValueWasSetByUser": 0,
-	"iconImageName": "compass_brown"
+	"iconImageName": "compass_blue"
 	},
 "projectSettings": {
 	"alwaysUseExternalServer": 0,
@@ -857,7 +857,7 @@
 	"typescriptJSXMode": 0,
 	"typescriptMinifyOutput": 0,
 	"typescriptModuleResolutionType": 0,
-	"typescriptModuleType": 2,
+	"typescriptModuleType": 0,
 	"typescriptNoImplicitAny": 0,
 	"typescriptPreserveConstEnums": 0,
 	"typescriptRemoveComments": 0,
