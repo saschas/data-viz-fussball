@@ -150,8 +150,8 @@ function helperFunction(svg){
 
 var statistikKey = 'tore';
 var maxHelper = {};
-var maxRadius = 70;
-var minRadius = 10;
+var maxRadius = 90;
+var minRadius = 0;
 var visualisationData = {};
 
 var options = [
