@@ -17,9 +17,14 @@
 </div>
 
   <nav id="options">
-    <div class="logo" id="nationen">
-      <img src="img/logo.svg">
+    <div class="logo">
+    <img src="img/logo.svg">
     </div>
+
+<!--
+    <button style="display:none" id="getInfo">export positions</button>
+  </nav>-->
+
 
 <aside>
   <form>
@@ -52,8 +57,8 @@
       <label for="qualifikationen">qualifikationen</label>
     </div> 
     <div class="row">
-      <input class="filter" type="radio" id="marktwert" name="selectFilter" />
-      <label for="marktwert">marktwert</label>
+      <input class="filter" type="radio" id="martkwert" name="selectFilter" />
+      <label for="martkwert">martkwert</label>
     </div>
     <div class="row">
       <input class="filter" type="radio" id="kader" name="selectFilter" />
@@ -71,11 +76,6 @@
       <input class="filter" type="radio" id="gastgeber" name="selectFilter" />
       <label for="gastgeber">gastgeber</label>
     </div>
-    <div class="row">
-      <input class="filter" type="radio" id="nationen" name="selectFilter" checked />
-      <label for="nationen">landesGröße</label>
-    </div>
-
     <div class="row">
       <input class="filter" type="radio" id="twitter" name="selectFilter" />
       <label for="twitter">twitter</label>
@@ -107,19 +107,11 @@
 
 </nav>
 
-<div class="infobox" id="infoBox" data-currentFilter="gegentore">
-  <div class="gegentore-info">
-    <h1>Gegentore</h1>
-    <p>In der Geschichte der EM wurden bisher 578 Tore geschossen! Die meisten davon gehen auf Deutschlands Kappe, und das obwohl sie die EM dreimal verpasst haben. Holland konnte sich dieses Jahr nicht qualifizieren, steht jedoch noch vor Spanien auf dem zweiten Platz in der Tor-Statistik. Ein Hoch auf Klinsmann, die Müllers, Podolski & Co.!</p>
-  </div>
-  <div class="tore-info">
-    <h1>Tore</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel nemo id esse ipsam animi, temporibus eos. Quae ut nam obcaecati autem recusandae ea quam, quibusdam deserunt pariatur, quaerat, aliquid nobis.</p>
-  </div>
-  <div id="countrieInfo">
-    <h2>Niederlande</h2>
-    <h3>283</h3>
-  </div>
+<div class="infobox">
+<h1>Gegentore</h1>
+<p>In der Geschichte der EM wurden bisher 578 Tore geschossen! Die meisten davon gehen auf Deutschlands Kappe, und das obwohl sie die EM dreimal verpasst haben. Holland konnte sich dieses Jahr nicht qualifizieren, steht jedoch noch vor Spanien auf dem zweiten Platz in der Tor-Statistik. Ein Hoch auf Klinsmann, die Müllers, Podolski & Co.!</p>
+<h2>Niederlande</h2>
+<h3>283</h3>
 </div>
 
   <main id="statistikPlayground">
