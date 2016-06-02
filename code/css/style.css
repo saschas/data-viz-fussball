@@ -1,17 +1,14 @@
 * {
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
 html, body {
   width: 100%;
   height: 100%;
-  overflow: hidden;
-}
+  overflow: hidden; }
 
 body, div, h1, h2, p {
   padding: 0;
-  margin: 0;
-}
+  margin: 0; }
 
 body {
   height: 100%;
@@ -20,68 +17,50 @@ body {
   -webkit-font-smoothing: antialiased;
   text-rendering: geometricPrecision;
   overflow: auto;
-  background: #1d1c28;
-}
+  background: #1d1c28; }
 
 @keyframes logo-in {
   from {
-    transform: scale(0.48);
-  }
+    transform: scale(0.48); }
   to {
-    transform: scale(1);
-  }
-}
+    transform: scale(1); } }
 
 @keyframes logo-out {
   from {
-    opacity: 1;
-  }
+    opacity: 1; }
   to {
-    opacity: 0;
-  }
-}
+    opacity: 0; } }
 
 @keyframes bubbles {
   from {
-    transform: scale(0);
-  }
+    transform: scale(0); }
   to {
-    transform: scale(1);
-  }
-}
+    transform: scale(1); } }
 
 @keyframes fade {
   from {
-    opacity: 0;
-  }
+    opacity: 0; }
   to {
-    opacity: 1;
-  }
-}
+    opacity: 1; } }
 
 #intro {
   animation: logo-in 1.48s ease-in-out 0.4s forwards, logo-out 0.48s ease-in-out 3s forwards;
   transform: scale(0.48);
   position: absolute;
   width: 100%;
-  height: 100%;
-}
-
-#intro .intro-logo {
-  position: absolute;
-  width: 400px;
-  height: 400px;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  margin: auto;
-}
-
-#intro .intro-logo img {
-  width: 100%;
-  transform: translateY(10%);
-}
+  height: 100%; }
+  #intro .intro-logo {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto; }
+    #intro .intro-logo img {
+      width: 100%;
+      transform: translateY(10%); }
 
 nav {
   animation: fade 0.48s ease-in-out 6s forwards;
@@ -90,8 +69,7 @@ nav {
   top: 0;
   z-index: 9;
   width: 134px;
-  padding: 4% 2%;
-}
+  padding: 4% 2%; }
 
 .holder {
   position: absolute;
@@ -103,15 +81,13 @@ nav {
   height: 100%;
   transform-style: preserve-3d;
   perspective: 1px;
-  overflow: hidden;
-}
+  overflow: hidden; }
 
 .bubbles {
   animation: fade 0s ease-in-out 3.7s forwards, bubbles 2s ease-in-out 3.6s forwards;
   opacity: 0;
   border-radius: 50%;
-  background-size: cover;
-}
+  background-size: cover; }
 
 button {
   position: relative;
@@ -131,32 +107,25 @@ button {
   font-weight: 200;
   cursor: pointer;
   transition: .1s ease-in-out;
-  border-left: 28px solid #2c344f;
-}
+  border-left: 28px solid #2c344f; }
 
 button:hover {
-  border-left: 28px solid #34c6aa;
-}
+  border-left: 28px solid #058baa; }
 
 button:active, button:focus {
-  border-left: 28px solid #34c6aa;
-  outline: none;
-}
+  border-left: 28px solid #058baa;
+  outline: none; }
 
 .logo {
   width: 150px;
   transform: translateX(calc((170px - 150px) / 2));
-  padding-bottom: 40px;
-}
-
-.logo img {
-  width: 100%;
-}
+  padding-bottom: 40px; }
+  .logo img {
+    width: 100%; }
 
 .map img {
   width: 100%;
   height: 100%;
   top: 0;
   bottom: 0;
-  position: absolute;
-}
+  position: absolute; }
