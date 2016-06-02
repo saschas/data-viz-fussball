@@ -26,6 +26,23 @@ body{
 }
 
 
+/////////////////////////Playground
+
+main#statistikPlayground {
+    width: 100%;
+    position: relative;
+    margin: auto;
+    top: 50%;
+    transform: translateY(-50%);
+}
+main#statistikPlayground:before {
+    content: '';
+    display: block;
+    width: 100%;
+    padding-top: 80%;
+}
+
+
 
 /////////////////////////INTRO
 
@@ -152,11 +169,11 @@ border-left: 28px solid #2c344f;
 }
 
   button:hover{
-  border-left: 28px solid #34c6aa;  
+  border-left: 28px solid #058baa;  
   }
 
   button:active,button:focus{
-  border-left: 28px solid #34c6aa; 
+  border-left: 28px solid #058baa; 
   outline: none;
   }
 

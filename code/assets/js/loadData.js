@@ -154,6 +154,9 @@ var maxRadius = 148;
 var minRadius = 10;
 var visualisationData = {};
 
+var statistikPlayground = document.getElementById('statistikPlayground');
+
+
 var options = [
 'tore',
 'gegentore',
@@ -286,8 +289,11 @@ function buildCircle (holder,opt) {
 
    c.classList.add('bubbles');
 
+
+   console.log(opt.x);
+
    var backgroundImage = "background-image:url(assets/ico/" + capitalizeFirstLetter( opt.name ) + ".svg);";
-   c.setAttribute('style', 'position:absolute;top:'+ opt.y * .1+'%;' + backgroundImage +'left:'+ opt.x*.1 +'%;transform: translateX(-50%) translateY(-50%); width:'+c.radius + 'px;height:'+c.radius+'px;');
+   c.setAttribute('style', 'position:absolute;left:'+ opt.x*.1 +'%;top:'+ opt.y * .1+'%;' + backgroundImage +'transform: translateX(-50%) translateY(-50%); width:'+c.radius + 'px;height:'+c.radius+'px;');
   //c.setAttribute('translateX' , opt.x);
   //c.setAttribute('translateY' , opt.y);
   //c.setAttribute('width', c.radius) ;
@@ -364,7 +370,7 @@ function buildDataViz(data){
 
       svgElem.style.display = "block";
 
-    document.body.appendChild(svgElem);
+   statistikPlayground.appendChild(svgElem);
 
   //var definitionsHolder = document.createElementNS (xmlns, "defs");
   //    svgElem.appendChild(definitionsHolder);
@@ -496,4 +502,4 @@ function animate(time) {
 TweenMax.set("#map", {scale:2})
 
 tl = new TimelineLite();
-  tl.to("#map", 4.4, {transformOrigin: "center center", scale:0.8, ease:Sine.easeIn})
+  tl.to("#map", 4.4, {transformOrigin: "center center", scale:1, ease:Sine.easeIn})
