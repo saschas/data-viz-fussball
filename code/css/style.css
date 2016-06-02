@@ -1,14 +1,17 @@
 * {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
 html, body {
   width: 100%;
   height: 100%;
-  overflow: hidden; }
+  overflow: hidden;
+}
 
 body, div, h1, h2, p {
   padding: 0;
-  margin: 0; }
+  margin: 0;
+}
 
 body {
   height: 100%;
@@ -16,160 +19,206 @@ body {
   font-family: 'Roboto Condensed', sans-serif;
   -webkit-font-smoothing: antialiased;
   text-rendering: geometricPrecision;
-  background: #1d1c28; }
+  background: #1d1c28;
+}
 
 .tore-info {
-  display: none; }
+  display: none;
+}
 
 #infoBox[data-currentFilter=tore] .tore-info {
-  display: block; }
+  display: block;
+}
 
 #infoBox[data-currentFilter=''] h3 {
-  display: none; }
+  display: none;
+}
 
 /* We create `$selector` */
 .gegentore-info {
-  display: none; }
+  display: none;
+}
 
 #infoBox[data-currentFilter=gegentore] .gegentore-info {
-  display: block; }
+  display: block;
+}
 
 #infoBox[data-currentFilter=''] h3 {
-  display: none; }
+  display: none;
+}
 
 /* We create `$selector` */
 .spielanzahl-info {
-  display: none; }
+  display: none;
+}
 
 #infoBox[data-currentFilter=spielanzahl] .spielanzahl-info {
-  display: block; }
+  display: block;
+}
 
 #infoBox[data-currentFilter=''] h3 {
-  display: none; }
+  display: none;
+}
 
 /* We create `$selector` */
 .alter-info {
-  display: none; }
+  display: none;
+}
 
 #infoBox[data-currentFilter=alter] .alter-info {
-  display: block; }
+  display: block;
+}
 
 #infoBox[data-currentFilter=''] h3 {
-  display: none; }
+  display: none;
+}
 
 /* We create `$selector` */
 .rotekarten-info {
-  display: none; }
+  display: none;
+}
 
 #infoBox[data-currentFilter=rotekarten] .rotekarten-info {
-  display: block; }
+  display: block;
+}
 
 #infoBox[data-currentFilter=''] h3 {
-  display: none; }
+  display: none;
+}
 
 /* We create `$selector` */
 .gelbekarten-info {
-  display: none; }
+  display: none;
+}
 
 #infoBox[data-currentFilter=gelbekarten] .gelbekarten-info {
-  display: block; }
+  display: block;
+}
 
 #infoBox[data-currentFilter=''] h3 {
-  display: none; }
+  display: none;
+}
 
 /* We create `$selector` */
 .qualifikationen-info {
-  display: none; }
+  display: none;
+}
 
 #infoBox[data-currentFilter=qualifikationen] .qualifikationen-info {
-  display: block; }
+  display: block;
+}
 
 #infoBox[data-currentFilter=''] h3 {
-  display: none; }
+  display: none;
+}
 
 /* We create `$selector` */
 .marktwert-info {
-  display: none; }
+  display: none;
+}
 
 #infoBox[data-currentFilter=marktwert] .marktwert-info {
-  display: block; }
+  display: block;
+}
 
 #infoBox[data-currentFilter=''] h3 {
-  display: none; }
+  display: none;
+}
 
 /* We create `$selector` */
 .kader-info {
-  display: none; }
+  display: none;
+}
 
 #infoBox[data-currentFilter=kader] .kader-info {
-  display: block; }
+  display: block;
+}
 
 #infoBox[data-currentFilter=''] h3 {
-  display: none; }
+  display: none;
+}
 
 /* We create `$selector` */
 .punkte-info {
-  display: none; }
+  display: none;
+}
 
 #infoBox[data-currentFilter=punkte] .punkte-info {
-  display: block; }
+  display: block;
+}
 
 #infoBox[data-currentFilter=''] h3 {
-  display: none; }
+  display: none;
+}
 
 /* We create `$selector` */
 .siege-info {
-  display: none; }
+  display: none;
+}
 
 #infoBox[data-currentFilter=siege] .siege-info {
-  display: block; }
+  display: block;
+}
 
 #infoBox[data-currentFilter=''] h3 {
-  display: none; }
+  display: none;
+}
 
 /* We create `$selector` */
 .gastgeber-info {
-  display: none; }
+  display: none;
+}
 
 #infoBox[data-currentFilter=gastgeber] .gastgeber-info {
-  display: block; }
+  display: block;
+}
 
 #infoBox[data-currentFilter=''] h3 {
-  display: none; }
+  display: none;
+}
 
 /* We create `$selector` */
 .twitter-info {
-  display: none; }
+  display: none;
+}
 
 #infoBox[data-currentFilter=twitter] .twitter-info {
-  display: block; }
+  display: block;
+}
 
 #infoBox[data-currentFilter=''] h3 {
-  display: none; }
+  display: none;
+}
 
 /* We create `$selector` */
 .nationen-info {
-  display: none; }
+  display: none;
+}
 
 #infoBox[data-currentFilter=nationen] .nationen-info {
-  display: block; }
+  display: block;
+}
 
 #infoBox[data-currentFilter=''] h3 {
-  display: none; }
+  display: none;
+}
 
 /* We create `$selector` */
 main#statistikPlayground {
   width: 80%;
+  max-width: 1248px;
   position: relative;
   margin: auto;
   top: 50%;
-  transform: translateY(-50%); }
+  transform: translateY(-50%);
+}
 
 main#statistikPlayground:before {
   content: '';
   display: block;
   width: 100%;
-  padding-top: 80%; }
+  padding-top: 80%;
+}
 
 .map img {
   width: 100%;
@@ -177,86 +226,119 @@ main#statistikPlayground:before {
   top: 0;
   bottom: 0;
   position: absolute;
-  z-index: -1; }
+  z-index: -1;
+}
 
 @-webkit-keyframes logo-in {
   from {
-    transform: scale(0.48); }
+    transform: scale(0.48);
+  }
   to {
-    transform: scale(1); } }
+    transform: scale(1);
+  }
+}
 
 @-webkit-keyframes logo-out {
   from {
-    opacity: 1; }
+    opacity: 1;
+  }
   to {
-    opacity: 0; } }
+    opacity: 0;
+  }
+}
 
 @-webkit-keyframes bubbles {
   from {
-    transform: scale(0); }
+    transform: scale(0);
+  }
   to {
-    transform: scale(1); } }
+    transform: scale(1);
+  }
+}
 
 @-webkit-keyframes fade {
   from {
-    opacity: 0; }
+    opacity: 0;
+  }
   to {
-    opacity: 1; } }
+    opacity: 1;
+  }
+}
 
 @keyframes logo-in {
   from {
-    transform: scale(0.48); }
+    transform: scale(0.48);
+  }
   to {
-    transform: scale(1); } }
+    transform: scale(1);
+  }
+}
 
 @keyframes logo-out {
   from {
-    opacity: 1; }
+    opacity: 1;
+  }
   to {
-    opacity: 0; } }
+    opacity: 0;
+  }
+}
 
 @keyframes bubbles {
   from {
-    transform: scale(0); }
+    transform: scale(0);
+  }
   to {
-    transform: scale(1); } }
+    transform: scale(1);
+  }
+}
 
 @keyframes fade {
   from {
-    opacity: 0; }
+    opacity: 0;
+  }
   to {
-    opacity: 1; } }
+    opacity: 1;
+  }
+}
 
 #intro {
   animation: logo-in 1.48s ease-in-out 0.4s forwards, logo-out 0.48s ease-in-out 3s forwards;
   transform: scale(0.48);
   position: absolute;
   width: 100%;
-  height: 100%; }
-  #intro .intro-logo {
-    position: absolute;
-    z-index: 99;
-    width: 400px;
-    height: 400px;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    margin: auto; }
-    #intro .intro-logo img {
-      width: 100%;
-      transform: translateY(10%); }
+  height: 100%;
+}
+
+#intro .intro-logo {
+  position: absolute;
+  z-index: 99;
+  width: 400px;
+  height: 400px;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+#intro .intro-logo img {
+  width: 100%;
+  transform: translateY(10%);
+}
 
 .no-animation #intro {
-  display: none; }
+  display: none;
+}
 
 .no-animation .map {
   animation: fade 0.48s ease-in-out forwards;
-  opacity: 0; }
+  opacity: 0;
+}
 
 .no-animation nav, .no-animation .infobox {
   animation: fade 0.24s ease-in-out forwards;
-  opacity: 0; }
+  opacity: 0;
+}
 
 nav {
   animation: fade 0.48s ease-in-out 6s forwards;
@@ -265,15 +347,19 @@ nav {
   top: 0;
   z-index: 9;
   width: 134px;
-  padding: 4% 2%; }
+  padding: 4% 2%;
+}
 
 .logo {
   width: 150px;
   transform: translateX(calc((180px - 150px) / 2));
   padding-bottom: 40px;
-  cursor: pointer; }
-  .logo img {
-    width: 100%; }
+  cursor: pointer;
+}
+
+.logo img {
+  width: 100%;
+}
 
 aside {
   position: relative;
@@ -281,10 +367,12 @@ aside {
   border: none;
   width: 180px;
   display: block;
-  text-align: left; }
+  text-align: left;
+}
 
 input {
-  display: none; }
+  display: none;
+}
 
 label {
   cursor: pointer;
@@ -299,10 +387,12 @@ label {
   text-transform: uppercase;
   font-size: .8em;
   letter-spacing: .1em;
-  font-weight: 200; }
+  font-weight: 200;
+}
 
 label:hover:before {
-  background: #058baa; }
+  background: #058baa;
+}
 
 label:before {
   content: '';
@@ -311,19 +401,12 @@ label:before {
   width: 28px;
   height: 28px;
   left: 0;
-  background: #101016; }
+  background: #101016;
+}
 
 input[type=radio]:checked + label:before {
-  background: #058baa; }
-
-#share-buttons {
-  padding-left: 38px;
-  padding-top: 15px;
-  text-decoration: none; }
-  #share-buttons a {
-    text-decoration: none; }
-  #share-buttons img {
-    width: 30px; }
+  background: #058baa;
+}
 
 .holder {
   position: absolute;
@@ -334,7 +417,8 @@ input[type=radio]:checked + label:before {
   width: 100%;
   height: 100%;
   transform-style: preserve-3d;
-  perspective: 1px; }
+  perspective: 1px;
+}
 
 .bubbles {
   opacity: 0;
@@ -342,25 +426,33 @@ input[type=radio]:checked + label:before {
   background-size: cover;
   transition: all 1s;
   transform: translateX(-50%) translateY(-50%) scale(0);
-  position: absolute; }
+  position: absolute;
+}
 
 .bubbles.minimum {
-  -webkit-filter: grayscale(1); }
+  -webkit-filter: grayscale(1);
+}
 
 @keyframes hover-bubble {
   0% {
-    transform: translateX(-50%) translateY(-50%) scale(1); }
+    transform: translateX(-50%) translateY(-50%) scale(1);
+  }
   50% {
-    transform: translateX(-50%) translateY(-50%) scale(1.1); }
+    transform: translateX(-50%) translateY(-50%) scale(1.1);
+  }
   100% {
-    transform: translateX(-50%) translateY(-50%) scale(1); } }
+    transform: translateX(-50%) translateY(-50%) scale(1);
+  }
+}
 
 .animationFinish .bubbles:hover {
-  animation: hover-bubble 0.48s; }
+  animation: hover-bubble 0.48s;
+}
 
 .animationFinish .bubbles {
   opacity: 1;
-  transform: translateX(-50%) translateY(-50%) scale(1); }
+  transform: translateX(-50%) translateY(-50%) scale(1);
+}
 
 .infobox {
   animation: fade 0.48s ease-in-out 6s forwards;
@@ -370,44 +462,95 @@ input[type=radio]:checked + label:before {
   top: 0;
   padding: 4vw 2vw;
   width: 300px;
-  text-align: right; }
-  .infobox h1 {
-    font-size: 1.1em;
-    color: #ddd;
-    text-transform: uppercase;
-    padding-top: 10px;
-    letter-spacing: .07em; }
-  .infobox p {
-    font-size: .9em;
-    color: #80838e;
-    letter-spacing: .01em; }
-  .infobox h2 {
-    font-size: 1.2em;
-    color: #ddd;
-    text-transform: uppercase;
-    padding-top: 20px;
-    letter-spacing: .1em; }
-  .infobox h3 {
-    font-size: 2em;
-    color: #ddd;
-    text-transform: uppercase;
-    margin: 0; }
-  .infobox h4 {
-    font-size: .6em;
-    color: #80838e;
-    text-transform: uppercase;
-    margin: 0;
-    letter-spacing: .09em; }
+  text-align: right;
+}
+
+.infobox h1 {
+  font-size: 1.1em;
+  color: #ddd;
+  text-transform: uppercase;
+  padding-top: 10px;
+  letter-spacing: .07em;
+}
+
+.infobox p {
+  font-size: .9em;
+  color: #80838e;
+  letter-spacing: .01em;
+}
+
+.infobox h2 {
+  font-size: 1.2em;
+  color: #ddd;
+  text-transform: uppercase;
+  padding-top: 20px;
+  letter-spacing: .1em;
+}
+
+.infobox h3 {
+  font-size: 2em;
+  color: #ddd;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.infobox h4 {
+  font-size: .6em;
+  color: #80838e;
+  text-transform: uppercase;
+  margin: 0;
+  letter-spacing: .09em;
+}
 
 .infobox2 {
   position: relative;
   right: 2vw;
-  padding-top: 0; }
-  .infobox2 h1 {
-    font-size: .8em;
-    margin-top: -10px; }
+  padding-top: 0;
+}
+
+.infobox2 h1 {
+  font-size: .8em;
+  margin-top: -10px;
+}
+
+footer {
+  position: absolute;
+  right: 2vw;
+  bottom: 2vw;
+  display: block;
+}
+
+footer #share-buttons {
+  float: right;
+  text-decoration: none;
+}
+
+footer #share-buttons a {
+  text-decoration: none;
+}
+
+footer #share-buttons img {
+  width: 30px;
+}
+
+footer a {
+  text-decoration: none;
+  position: relative;
+  text-transform: uppercase;
+  color: #80838e;
+  font-size: .6em;
+  letter-spacing: .1em;
+}
+
+footer #impressum {
+  padding-right: 10px;
+  bottom: 0;
+  vertical-align: sub;
+}
 
 @media screen and (max-width: 800px) {
   .animationFinish .bubbles {
     opacity: 1;
-    transform: translateX(-50%) translateY(-50%) scale(0.6); } }
+    transform: translateX(-50%) translateY(-50%) scale(0.6);
+  }
+}
