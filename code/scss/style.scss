@@ -35,6 +35,7 @@ $options : 'tore', 'gegentore', 'spielanzahl', 'alter', 'rotekarten', 'gelbekart
   .#{$item}-info{
     display: none;
   }
+<<<<<<< HEAD
   #infoBox[data-currentFilter=#{$item}] .#{$item}-info {
     display: block;
   }
@@ -42,6 +43,11 @@ $options : 'tore', 'gegentore', 'spielanzahl', 'alter', 'rotekarten', 'gelbekart
     display: none;
   }
   /* We create `$selector` */
+=======
+  #infoBox[data-currentfilter=#{$item}] .#{$item}-info{
+    display: block;
+  }
+>>>>>>> origin/master
 }
 
 //____________________________PLAYGROUND
