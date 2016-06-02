@@ -60,6 +60,45 @@ main#statistikPlayground:before {
 
 /////////////////////////INTRO
 
+@-webkit-keyframes logo-in {
+  from {
+    transform:scale(.48);
+  }
+  to {
+    transform:scale(1);
+  }
+}
+
+@-webkit-keyframes logo-out {
+  from {
+    opacity:1;
+  }
+  to {
+    opacity:0;
+  }
+}
+
+@-webkit-keyframes bubbles {
+  from {
+    transform:scale(0);
+  }
+  to {
+    transform:scale(1);
+  }
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity:0;
+  }
+  to {
+    opacity:1;
+  }
+}
+
+
+//____________
+
 @keyframes logo-in {
   from {
     transform:scale(.48);
@@ -95,6 +134,9 @@ main#statistikPlayground:before {
     opacity:1;
   }
 }
+
+//________
+
 
 #intro{
    animation: logo-in 1.48s ease-in-out .4s forwards, logo-out .48s ease-in-out 3s forwards;
