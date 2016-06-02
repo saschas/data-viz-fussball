@@ -72,7 +72,7 @@ if(!visitedCookie){
   document.body.classList.add('no-animation');
   setTimeout(function() {
     document.body.classList.add('animationFinish');
-  },1000);
+  },400);
 }
 
 

@@ -43,6 +43,21 @@ main#statistikPlayground:before {
 
 
 
+/////////////////////////BACKGROUND
+
+
+.map{
+
+ img{
+   width:100%;
+   height:100%;
+   top:0;
+   bottom:0;
+   position:absolute;
+ }
+}
+
+
 /////////////////////////INTRO
 
 @keyframes logo-in {
@@ -106,7 +121,17 @@ main#statistikPlayground:before {
 }
 
 .no-animation #intro{
-  display: none;
+    display: none;
+}
+
+.no-animation .map{
+  animation: fade .48s ease-in-out forwards;
+  opacity: 0;
+}
+
+.no-animation nav{
+  animation: fade .24s ease-in-out forwards;
+  opacity: 0;
 }
 
 /////////////////////////NAV
@@ -255,16 +280,3 @@ padding-bottom:40px;
 }
 
 
-/////////////////////////BACKGROUND
-
-
-.map{
-
- img{
-   width:100%;
-   height:100%;
-   top:0;
-   bottom:0;
-   position:absolute;
- }
-}
