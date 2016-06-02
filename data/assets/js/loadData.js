@@ -1,149 +1,149 @@
 
-function capitalizeFirstLetter(string) {
-    return string.charAt(0).toUpperCase() + string.slice(1);
-}
-function helperFunction(svg){
+// function capitalizeFirstLetter(string) {
+//     return string.charAt(0).toUpperCase() + string.slice(1);
+// }
+// function helperFunction(svg){
 
-    //__________________ JSON aus der Console heraus exportieren
+//     //__________________ JSON aus der Console heraus exportieren
 
-    (function(console){
+//     (function(console){
 
-    console.save = function(data, filename){
+//     console.save = function(data, filename){
 
-        if(!data) {
-            console.error('Console.save: No data')
-            return;
-        }
+//         if(!data) {
+//             console.error('Console.save: No data')
+//             return;
+//         }
 
-        if(!filename) filename = 'console.json'
+//         if(!filename) filename = 'console.json'
 
-        if(typeof data === "object"){
-            data = JSON.stringify(data, undefined, 4)
-        }
+//         if(typeof data === "object"){
+//             data = JSON.stringify(data, undefined, 4)
+//         }
 
-        var blob = new Blob([data], {type: 'text/json'}),
-            e    = document.createEvent('MouseEvents'),
-            a    = document.createElement('a')
+//         var blob = new Blob([data], {type: 'text/json'}),
+//             e    = document.createEvent('MouseEvents'),
+//             a    = document.createElement('a')
 
-        a.download = filename
-        a.href = window.URL.createObjectURL(blob)
-        a.dataset.downloadurl =  ['text/json', a.download, a.href].join(':')
-        e.initMouseEvent('click', true, false, window, 0, 0, 0, 0, 0, false, false, false, false, 0, null)
-        a.dispatchEvent(e)
-     }
-    })(console);
+//         a.download = filename
+//         a.href = window.URL.createObjectURL(blob)
+//         a.dataset.downloadurl =  ['text/json', a.download, a.href].join(':')
+//         e.initMouseEvent('click', true, false, window, 0, 0, 0, 0, 0, false, false, false, false, 0, null)
+//         a.dispatchEvent(e)
+//      }
+//     })(console);
 
-    //__________________ Variablen
-
-
-    var mouse = {
-        x : 0,
-        y : 0,
-        active : false,
-        scale : {
-            x : 0,
-            diff : 0,
-            bool : false
-        }
-    }
+//     //__________________ Variablen
 
 
-    //var svgElement = document.getElementsByTagName('svg');
-    var getInfoButton = document.getElementById('getInfo');
-    var countries = svg.getElementsByClassName('bubbles');
+//     var mouse = {
+//         x : 0,
+//         y : 0,
+//         active : false,
+//         scale : {
+//             x : 0,
+//             diff : 0,
+//             bool : false
+//         }
+//     }
 
-    console.log(svg,svg.getElementsByTagName('circle'));
 
-    //__________________ Download data
+//     //var svgElement = document.getElementsByTagName('svg');
+//     var getInfoButton = document.getElementById('getInfo');
+//     var countries = svg.getElementsByClassName('bubbles');
 
+//     console.log(svg,svg.getElementsByTagName('circle'));
 
-
-    getInfoButton.addEventListener('click',function(){
-        getInfo();
-    });
+//     //__________________ Download data
 
 
 
-    function getInfo(){
-        var landInfo = [];
-        for(var i=0;i<countries.length;i++){
+//     getInfoButton.addEventListener('click',function(){
+//         getInfo();
+//     });
 
-          console.log(countries[i]);
 
-          landInfo.push({
-            name : countries[i].id,
-            x : countries[i].style.left , // parseFloat(countries[i].getAttribute('cx')),
-            y : countries[i].style.top , // parseFloat(countries[i].getAttribute('cy')),
-            radius: countries[i].style.width //parseFloat(countries[i].getAttribute('r')),
-          });
-        }
 
-        console.save(landInfo);
+//     function getInfo(){
+//         var landInfo = [];
+//         for(var i=0;i<countries.length;i++){
 
-    }
-    //__________________ Variablen
+//           console.log(countries[i]);
 
-    window.addEventListener('keydown',function(e){
-        if (e.altKey) {
-            console.log("The ALT key was pressed!");
-            mouse.scale.bool = true;
-        } 
-    });
+//           landInfo.push({
+//             name : countries[i].id,
+//             x : countries[i].style.left , // parseFloat(countries[i].getAttribute('cx')),
+//             y : countries[i].style.top , // parseFloat(countries[i].getAttribute('cy')),
+//             radius: countries[i].style.width //parseFloat(countries[i].getAttribute('r')),
+//           });
+//         }
 
-    window.addEventListener('keyup',function(e){
+//         console.save(landInfo);
+
+//     }
+//     //__________________ Variablen
+
+//     window.addEventListener('keydown',function(e){
+//         if (e.altKey) {
+//             console.log("The ALT key was pressed!");
+//             mouse.scale.bool = true;
+//         } 
+//     });
+
+//     window.addEventListener('keyup',function(e){
         
-            mouse.scale.bool = false;
-            mouse.activeEl = null;
+//             mouse.scale.bool = false;
+//             mouse.activeEl = null;
         
-    });
+//     });
 
 
 
-    window.addEventListener('mousedown',function(e){
+//     window.addEventListener('mousedown',function(e){
 
 
-        if(e.target.classList.contains('bubbles')){
-            mouse.activeEl = e.target;
+//         if(e.target.classList.contains('bubbles')){
+//             mouse.activeEl = e.target;
 
-            if(mouse.scale.bool){
-                mouse.active= false;
-                mouse.scale.x = e.pageX;
-                mouse.scale.y = e.pageY;
-            }else{
-                //console.log(mouse.active,e.target);
-                mouse.active= true;
+//             if(mouse.scale.bool){
+//                 mouse.active= false;
+//                 mouse.scale.x = e.pageX;
+//                 mouse.scale.y = e.pageY;
+//             }else{
+//                 //console.log(mouse.active,e.target);
+//                 mouse.active= true;
                 
-            }
-        }
+//             }
+//         }
 
 
-    });
+//     });
 
 
-    window.addEventListener('mousemove',function(e){
-        mouse.x = e.pageX;
-        mouse.y = e.pageY;
+//     window.addEventListener('mousemove',function(e){
+//         mouse.x = e.pageX;
+//         mouse.y = e.pageY;
 
-        if(mouse.scale.bool){
-            mouse.scale.diff = e.pageX - mouse.scale.x;
+//         if(mouse.scale.bool){
+//             mouse.scale.diff = e.pageX - mouse.scale.x;
 
-            mouse.activeEl.style.width =  mouse.scale.diff+'%';// setAttribute('r', mouse.scale.diff);
-        }
-        if(mouse.active){
-          mouse.activeEl.style.top = mouse.x + '%';
-          mouse.activeEl.style.left = mouse.y + '%';
-            //mouse.activeEl.setAttribute('cx',mouse.x);
-            //mouse.activeEl.setAttribute('cy',mouse.y);
-        }
-    });
+//             mouse.activeEl.style.width =  mouse.scale.diff+'%';// setAttribute('r', mouse.scale.diff);
+//         }
+//         if(mouse.active){
+//           mouse.activeEl.style.top = mouse.x + '%';
+//           mouse.activeEl.style.left = mouse.y + '%';
+//             //mouse.activeEl.setAttribute('cx',mouse.x);
+//             //mouse.activeEl.setAttribute('cy',mouse.y);
+//         }
+//     });
 
-    window.addEventListener('mouseup',function(e){
+//     window.addEventListener('mouseup',function(e){
 
-        mouse.active= false;
-        mouse.activeEl = null;
+//         mouse.active= false;
+//         mouse.activeEl = null;
         
-    });
-}
+//     });
+// }
 
 //_____________________________________ Helper 
 
@@ -395,7 +395,7 @@ function buildDataViz(data){
   }//endfor
 
 
-  helperFunction(svgElem);
+ // helperFunction(svgElem);
 
   visualisationData = data;
 }
@@ -434,18 +434,25 @@ function changeKey(targetKey){
 
 
 
-var buttonHolder = document.getElementById('options');
-options.forEach(function(o,index) {
-  var btn = document.createElement('button');
-      btn.name = o;
-      btn.innerHTML = o;
+// var buttonHolder = document.getElementById('options');
+// options.forEach(function(o,index) {
+//   var btn = document.createElement('button');
+//       btn.name = o;
+//       btn.innerHTML = o;
 
-      btn.addEventListener('click', actionButton) 
+//       btn.addEventListener('click', actionButton) 
 
-  buttonHolder.appendChild(btn);
+//   buttonHolder.appendChild(btn);
 
-});
+// });
 
+
+var inputFields = document.getElementsByTagName('input');
+for(var i=0;i<inputFields.length;i++){
+    
+  inputFields[i].addEventListener('click',actionButton);
+  
+}
 
 function actionButton(e) {
   changeKey(this.name);
@@ -492,5 +499,4 @@ function animate(time) {
 
 
 
-
-
+//_____________________________________ Input Radio

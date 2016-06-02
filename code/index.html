@@ -17,23 +17,84 @@
 </div>
 
   <nav id="options">
+    <div class="logo">
+    <img src="img/logo.svg">
+    </div>
 
-  <div class="logo">
-  <img src="img/logo.svg">
-  </div>
+<!--
+    <button style="display:none" id="getInfo">export positions</button>
+  </nav>-->
 
-  <button style="display:none" id="getInfo">export positions</button>
-  </nav>
 
-<div class="map">
-<img id="map" src="img/map-01.svg">
-</div>
+<aside>
+  <form>
+    <div class="row">
+      <input class="filter" type="radio" id="tore" name="selectFilter" />
+      <label for="tore">Tore</label>
+    </div>
+    <div class="row">
+      <input class="filter" type="radio" id="gegentore" name="selectFilter" />
+      <label for="gegentore">Gegentore</label>
+    </div>
+    <div class="row">
+      <input class="filter" type="radio" id="spielanzahl" name="selectFilter" />
+      <label for="spielanzahl">spielanzahl</label>
+    </div>
+    <div class="row">
+      <input class="filter" type="radio" id="alter" name="selectFilter" />
+      <label for="alter">alter</label>
+    </div>   
+    <div class="row">
+      <input class="filter" type="radio" id="rot" name="selectFilter" />
+      <label for="rot">rot</label>
+    </div> 
+    <div class="row">
+      <input class="filter" type="radio" id="gelb" name="selectFilter" />
+      <label for="gelb">gelb</label>
+    </div> 
+    <div class="row">
+      <input class="filter" type="radio" id="qualifikationen" name="selectFilter" />
+      <label for="qualifikationen">qualifikationen</label>
+    </div> 
+    <div class="row">
+      <input class="filter" type="radio" id="martkwert" name="selectFilter" />
+      <label for="martkwert">martkwert</label>
+    </div>
+    <div class="row">
+      <input class="filter" type="radio" id="kader" name="selectFilter" />
+      <label for="kader">kader</label>
+    </div>
+    <div class="row">
+      <input class="filter" type="radio" id="punkte" name="selectFilter" />
+      <label for="punkte">punkte</label>
+    </div> 
+    <div class="row">
+      <input class="filter" type="radio" id="siege" name="selectFilter" />
+      <label for="siege">siege</label>
+    </div>   
+    <div class="row">
+      <input class="filter" type="radio" id="gastgeber" name="selectFilter" />
+      <label for="gastgeber">gastgeber</label>
+    </div>
+    <div class="row">
+      <input class="filter" type="radio" id="twitter" name="selectFilter" />
+      <label for="twitter">twitter</label>
+    </div>          
+  </form>
+</aside>
 
-  <main id="statistikPlayground"></main>
+</nav>
+
+  <main id="statistikPlayground">
+    
+      <div class="map">
+        <img id="map" src="img/map-01.svg">
+      </div>
+
+  </main>
 
 
   <script type="text/javascript" src="assets/js/tween.js"></script>
-  <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.15.0/TweenMax.min.js"></script>
   <script type="text/javascript" src="assets/js/loadData.js"></script>
   <script type="text/javascript" src="js/functions.js"></script>
 </body>
