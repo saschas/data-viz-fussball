@@ -24,12 +24,18 @@ body {
 #infoBox[data-currentFilter=tore] .tore-info {
   display: block; }
 
+#infoBox[data-currentFilter=''] h3 {
+  display: none; }
+
 /* We create `$selector` */
 .gegentore-info {
   display: none; }
 
 #infoBox[data-currentFilter=gegentore] .gegentore-info {
   display: block; }
+
+#infoBox[data-currentFilter=''] h3 {
+  display: none; }
 
 /* We create `$selector` */
 .spielanzahl-info {
@@ -38,6 +44,9 @@ body {
 #infoBox[data-currentFilter=spielanzahl] .spielanzahl-info {
   display: block; }
 
+#infoBox[data-currentFilter=''] h3 {
+  display: none; }
+
 /* We create `$selector` */
 .alter-info {
   display: none; }
@@ -45,19 +54,28 @@ body {
 #infoBox[data-currentFilter=alter] .alter-info {
   display: block; }
 
-/* We create `$selector` */
-.rot-info {
+#infoBox[data-currentFilter=''] h3 {
   display: none; }
 
-#infoBox[data-currentFilter=rot] .rot-info {
-  display: block; }
-
 /* We create `$selector` */
-.gelb-info {
+.rotekarten-info {
   display: none; }
 
-#infoBox[data-currentFilter=gelb] .gelb-info {
+#infoBox[data-currentFilter=rotekarten] .rotekarten-info {
   display: block; }
+
+#infoBox[data-currentFilter=''] h3 {
+  display: none; }
+
+/* We create `$selector` */
+.gelbekarten-info {
+  display: none; }
+
+#infoBox[data-currentFilter=gelbekarten] .gelbekarten-info {
+  display: block; }
+
+#infoBox[data-currentFilter=''] h3 {
+  display: none; }
 
 /* We create `$selector` */
 .qualifikationen-info {
@@ -66,12 +84,18 @@ body {
 #infoBox[data-currentFilter=qualifikationen] .qualifikationen-info {
   display: block; }
 
+#infoBox[data-currentFilter=''] h3 {
+  display: none; }
+
 /* We create `$selector` */
 .marktwert-info {
   display: none; }
 
 #infoBox[data-currentFilter=marktwert] .marktwert-info {
   display: block; }
+
+#infoBox[data-currentFilter=''] h3 {
+  display: none; }
 
 /* We create `$selector` */
 .kader-info {
@@ -80,12 +104,18 @@ body {
 #infoBox[data-currentFilter=kader] .kader-info {
   display: block; }
 
+#infoBox[data-currentFilter=''] h3 {
+  display: none; }
+
 /* We create `$selector` */
 .punkte-info {
   display: none; }
 
 #infoBox[data-currentFilter=punkte] .punkte-info {
   display: block; }
+
+#infoBox[data-currentFilter=''] h3 {
+  display: none; }
 
 /* We create `$selector` */
 .siege-info {
@@ -94,12 +124,18 @@ body {
 #infoBox[data-currentFilter=siege] .siege-info {
   display: block; }
 
+#infoBox[data-currentFilter=''] h3 {
+  display: none; }
+
 /* We create `$selector` */
 .gastgeber-info {
   display: none; }
 
 #infoBox[data-currentFilter=gastgeber] .gastgeber-info {
   display: block; }
+
+#infoBox[data-currentFilter=''] h3 {
+  display: none; }
 
 /* We create `$selector` */
 .twitter-info {
@@ -108,12 +144,18 @@ body {
 #infoBox[data-currentFilter=twitter] .twitter-info {
   display: block; }
 
+#infoBox[data-currentFilter=''] h3 {
+  display: none; }
+
 /* We create `$selector` */
 .nationen-info {
   display: none; }
 
 #infoBox[data-currentFilter=nationen] .nationen-info {
   display: block; }
+
+#infoBox[data-currentFilter=''] h3 {
+  display: none; }
 
 /* We create `$selector` */
 main#statistikPlayground {
@@ -227,8 +269,9 @@ nav {
 
 .logo {
   width: 150px;
-  transform: translateX(calc((170px - 150px) / 2));
-  padding-bottom: 40px; }
+  transform: translateX(calc((180px - 150px) / 2));
+  padding-bottom: 40px;
+  cursor: pointer; }
   .logo img {
     width: 100%; }
 
@@ -236,7 +279,7 @@ aside {
   position: relative;
   z-index: 2;
   border: none;
-  width: 170px;
+  width: 180px;
   display: block;
   text-align: left; }
 
@@ -291,8 +334,7 @@ input[type=radio]:checked + label:before {
   width: 100%;
   height: 100%;
   transform-style: preserve-3d;
-  perspective: 1px;
-  overflow: hidden; }
+  perspective: 1px; }
 
 .bubbles {
   opacity: 0;
@@ -301,6 +343,20 @@ input[type=radio]:checked + label:before {
   transition: all 1s;
   transform: translateX(-50%) translateY(-50%) scale(0);
   position: absolute; }
+
+.bubbles.minimum {
+  -webkit-filter: grayscale(1); }
+
+@keyframes hover-bubble {
+  0% {
+    transform: translateX(-50%) translateY(-50%) scale(1); }
+  50% {
+    transform: translateX(-50%) translateY(-50%) scale(1.1); }
+  100% {
+    transform: translateX(-50%) translateY(-50%) scale(1); } }
+
+.animationFinish .bubbles:hover {
+  animation: hover-bubble 0.48s; }
 
 .animationFinish .bubbles {
   opacity: 1;
@@ -312,7 +368,7 @@ input[type=radio]:checked + label:before {
   position: absolute;
   right: 0;
   top: 0;
-  padding: 4% 2%;
+  padding: 4vw 2vw;
   width: 300px;
   text-align: right; }
   .infobox h1 {
@@ -326,7 +382,7 @@ input[type=radio]:checked + label:before {
     color: #80838e;
     letter-spacing: .01em; }
   .infobox h2 {
-    font-size: .8em;
+    font-size: 1.2em;
     color: #ddd;
     text-transform: uppercase;
     padding-top: 20px;
@@ -336,3 +392,22 @@ input[type=radio]:checked + label:before {
     color: #ddd;
     text-transform: uppercase;
     margin: 0; }
+  .infobox h4 {
+    font-size: .6em;
+    color: #80838e;
+    text-transform: uppercase;
+    margin: 0;
+    letter-spacing: .09em; }
+
+.infobox2 {
+  position: relative;
+  right: 2vw;
+  padding-top: 0; }
+  .infobox2 h1 {
+    font-size: .8em;
+    margin-top: -10px; }
+
+@media screen and (max-width: 800px) {
+  .animationFinish .bubbles {
+    opacity: 1;
+    transform: translateX(-50%) translateY(-50%) scale(0.6); } }

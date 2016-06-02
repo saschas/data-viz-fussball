@@ -96,8 +96,8 @@ var options = [
   'gegentore',
   'spielanzahl',
   'alter',
-  'rot',
-  'gelb',
+  'rotekarten',
+  'gelbekarten',
   'qualifikationen',
   'marktwert',
   'kader',
@@ -227,6 +227,8 @@ function buildCircle (holder,opt) {
     c.msg = opt.msg;
 
 
+    console.log(opt)
+
   holder.appendChild(c);
 
 
@@ -245,8 +247,6 @@ function buildCircle (holder,opt) {
     c.setAttribute('id', 'bubble' + opt.name);
 
 
-
-
   c.addEventListener('mouseenter',getSetDataInfo);
 
   return c;
@@ -256,12 +256,15 @@ function buildCircle (holder,opt) {
 function getSetDataInfo(e) {
   console.log(this.msg);
 
-  var h2 = document.createElement('h2');
-  var h3 = document.createElement('h3');
+  countrieInfo.innerHTML = '<h2 style="color:' + this.msg.farbe + ';">' + this.msg.anzeigename + '</h2><h3>'+ outputMinimum(this.msg[statistikKey])+'</h3>';
+}
 
-
-  countrieInfo.innerHTML = '<h2>' + this.msg.anzeigeName + '</h2><h3>'+ this.msg.absolute+'</h3>';
-
+function outputMinimum(value) {
+  if(value != -1 ){
+    return value;
+  }else{
+    return '-';
+  }
 }
 
 
@@ -304,11 +307,7 @@ function buildDataViz(data){
             y : data[key].y + offset.y,
             radius: getPercentageOfKey(statistikKey, data[key]),
             name : key,
-            msg : {
-              absolute : data[key][statistikKey],
-              anzeigeName : data[key].anzeigeName
-            },
-            color : getRandomColor()
+            msg : data[key]
         }
         
         //createBGPattern(definitionsHolder,  opt.name , opt.name );
@@ -341,7 +340,13 @@ function changeKey(targetKey){
         visualisationData[key].circle.radius = targetValue;
         statistikKey = targetKey;
 
+        if(statistikKey != 'nationen'){
+
         infoBox.dataset.currentfilter = statistikKey;
+        }else{
+          
+        infoBox.dataset.currentfilter = '';
+        }
 
       }
     }
@@ -400,10 +405,13 @@ function animateValues(start,target, object ){
         if(this.wert >= minRadius){
           object.style.width = maxRadius * this.wert / 100  + 'px';
           object.style.height = maxRadius * this.wert / 100  + 'px';
+          object.classList.remove('minimum');
          //object.setAttribute('r', maxRadius * this.wert / 100 )
         }else {
           object.style.width = maxRadius * minRadius / 100  + 'px';
           object.style.height = maxRadius * minRadius / 100  + 'px';
+          object.classList.add('minimum');
+
           //object.setAttribute('r', maxRadius * minRadius / 100 );
         }
       }).easing(TWEEN.Easing.Quadratic.InOut).start();

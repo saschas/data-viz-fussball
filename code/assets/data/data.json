@@ -1,6 +1,6 @@
 [
   [
-    {
+{
       "name" : "tore",
       "frankreich" : 49,
       "england" : 36,
@@ -35,7 +35,7 @@
       "slowenien" : 4,
       "norwegen" : 1
     },
-    {
+{
       "name" : "gegentore",
       "frankreich" : 39,
       "england" : 31,
@@ -70,7 +70,7 @@
       "slowenien" : 5,
       "norwegen" : 1
     },
-    {
+{
       "name" : "spielanzahl",
       "frankreich" : 32,
       "england" : 27,
@@ -105,7 +105,7 @@
       "slowenien" : 3,
       "norwegen" : 3
     },
-    {
+{
       "name" : "alter",
       "frankreich" : 28.1,
       "england" : 26.4,
@@ -131,17 +131,17 @@
       "kroatien" : 27.5,
       "schweden" : 27.4,
       "ungarn" : 27.9,
-      "niederlande" : "\n",
-      "griechenland" : "",
-      "daenemark" : "",
-      "bulgarien" : "",
-      "schottland" : "",
-      "lettland" : "",
-      "slowenien" : "",
-      "norwegen" : ""
+      "niederlande" : -1,
+      "griechenland" : -1,
+      "daenemark" : -1,
+      "bulgarien" : -1,
+      "schottland" : -1,
+      "lettland" : -1,
+      "slowenien" : -1,
+      "norwegen" : -1
     },
-    {
-      "name" : "rote karte",
+{
+      "name" : "rotekarten",
       "frankreich" : 0,
       "england" : 0,
       "deutschland" : 0,
@@ -175,8 +175,8 @@
       "slowenien" : 0,
       "norwegen" : 0
     },
-    {
-      "name" : "gelbe karte",
+{
+      "name" : "gelbekarten",
       "frankreich" : 6,
       "england" : 5,
       "deutschland" : 4,
@@ -210,7 +210,7 @@
       "slowenien" : 0,
       "norwegen" : 0
     },
-    {
+{
       "name" : "qualifikationen",
       "frankreich" : 9,
       "england" : 9,
@@ -245,7 +245,7 @@
       "slowenien" : 1,
       "norwegen" : 1
     },
-    {
+{
       "name" : "marktwert",
       "frankreich" : 444.5,
       "england" : 352.5,
@@ -271,16 +271,16 @@
       "kroatien" : 191.75,
       "schweden" : 87.75,
       "ungarn" : 27.9,
-      "niederlande" : "",
-      "griechenland" : "",
-      "daenemark" : "",
-      "bulgarien" : "",
-      "schottland" : "",
-      "lettland" : "",
-      "slowenien" : "",
-      "norwegen" : ""
+      "niederlande" : -1,
+      "griechenland" : -1,
+      "daenemark" : -1,
+      "bulgarien" : -1,
+      "schottland" : -1,
+      "lettland" : -1,
+      "slowenien" : -1,
+      "norwegen" : -1
     },
-    {
+{
       "name" : "kader",
       "frankreich" : 23,
       "england" : 21,
@@ -306,16 +306,16 @@
       "kroatien" : 16,
       "schweden" : 25,
       "ungarn" : 22,
-      "niederlande" : "",
-      "griechenland" : "",
-      "daenemark" : "",
-      "bulgarien" : "",
-      "schottland" : "",
-      "lettland" : "",
-      "slowenien" : "",
-      "norwegen" : ""
+      "niederlande" : -1,
+      "griechenland" : -1,
+      "daenemark" : -1,
+      "bulgarien" : -1,
+      "schottland" : -1,
+      "lettland" : -1,
+      "slowenien" : -1,
+      "norwegen" : -1
     },
-    {
+{
       "name" : "punkte",
       "frankreich" : 53,
       "england" : 36,
@@ -350,7 +350,7 @@
       "slowenien" : 2,
       "norwegen" : 4
     },
-    {
+{
       "name" : "siege",
       "frankreich" : 2,
       "england" : 0,
@@ -385,7 +385,7 @@
       "slowenien" : 0,
       "norwegen" : 0
     },
-    {
+{
       "name" : "gastgeber",
       "frankreich" : 3,
       "england" : 1,
@@ -420,7 +420,7 @@
       "slowenien" : 0,
       "norwegen" : 0
     },
-    {
+{
       "name" : "twitter",
       "frankreich" : 40800,
       "england" : 21200,
@@ -447,15 +447,15 @@
       "schweden" : 782,
       "ungarn" : 1633,
       "niederlande" : 35900,
-      "griechenland" : "",
+      "griechenland" : -1,
       "daenemark" : 2264,
       "bulgarien" : 232,
       "schottland" : 21300,
       "lettland" : 9590,
-      "slowenien" : "",
+      "slowenien" : -1,
       "norwegen" : 13900
     },
-    {
+{
       "name" : "x",
       "frankreich" : 238,
       "england" : 226,
@@ -490,7 +490,7 @@
       "slowenien" : 415,
       "norwegen" : 363
     },
-    {
+{
       "name" : "y",
       "frankreich" : 676,
       "england" : 503,
@@ -525,7 +525,7 @@
       "slowenien" : 731.1,
       "norwegen" : 358
     },
-    {
+{
       "name" : "nationen",
       "frankreich" : 162,
       "england" : 79,
@@ -560,79 +560,79 @@
       "slowenien" : 60,
       "norwegen" : 89
     },
-    {
-      "name" : "",
-      "frankreich" : "",
-      "england" : "",
-      "deutschland" : "",
-      "italien" : "",
-      "belgien" : "",
-      "portugal" : "",
-      "spanien" : "",
-      "rumaenien" : "",
-      "russland" : "",
-      "ukraine" : "",
-      "tschechien" : "",
-      "island" : "",
-      "albanien" : "",
-      "wales" : "",
-      "polen" : "",
-      "tuerkei" : "",
-      "irland" : "",
-      "oesterreich" : "",
-      "schweiz" : "",
-      "slowakei" : "",
-      "nordirland" : "",
-      "kroatien" : "",
-      "schweden" : "",
-      "ungarn" : "",
-      "niederlande" : "",
-      "griechenland" : "",
-      "daenemark" : "",
-      "bulgarien" : "",
-      "schottland" : "",
-      "lettland" : "",
-      "slowenien" : "",
-      "norwegen" : ""
+{
+      "name" : "farbe",
+      "frankreich" : "#058baa",
+      "england" : "#ffffff",
+      "deutschland" : "#ffffff",
+      "italien" : "#01a6c6",
+      "belgien" : "#cd4325",
+      "portugal" : "#cd4325",
+      "spanien" : "#b2260f",
+      "rumaenien" : "#f0d055",
+      "russland" : "#ffffff",
+      "ukraine" : "#f0d055",
+      "tschechien" : "#d31713",
+      "island" : "#0a4d68",
+      "albanien" : "#d31713",
+      "wales" : "#cd4325",
+      "polen" : "#ffffff",
+      "tuerkei" : "#cd4325",
+      "irland" : "#106846",
+      "oesterreich" : "#cd4325",
+      "schweiz" : "#cd4325",
+      "slowakei" : "#ffffff",
+      "nordirland" : "#106846",
+      "kroatien" : "#ffffff",
+      "schweden" : "#f0d055",
+      "ungarn" : "#b3b3b3",
+      "niederlande" : "#ff761a",
+      "griechenland" : "#ffffff",
+      "daenemark" : "#d31713",
+      "bulgarien" : "#ffffff",
+      "schottland" : "#ffffff",
+      "lettland" : "#6c1e45",
+      "slowenien" : "#bbe8ef",
+      "norwegen" : "#d31713"
     },
-    {
-      "name" : "",
-      "frankreich" : "",
-      "england" : "",
-      "deutschland" : " ",
-      "italien" : "",
-      "belgien" : "",
-      "portugal" : "",
-      "spanien" : "",
-      "rumaenien" : "",
-      "russland" : "",
-      "ukraine" : "",
-      "tschechien" : "",
-      "island" : "",
-      "albanien" : "",
-      "wales" : "",
-      "polen" : "",
-      "tuerkei" : "",
-      "irland" : "",
-      "oesterreich" : "",
-      "schweiz" : "",
-      "slowakei" : "",
-      "nordirland" : "",
-      "kroatien" : "",
-      "schweden" : "",
-      "ungarn" : "",
-      "niederlande" : "",
-      "griechenland" : "",
-      "daenemark" : "",
-      "bulgarien" : "",
-      "schottland" : "",
-      "lettland" : "",
-      "slowenien" : "",
-      "norwegen" : ""
+{
+      "name" : "anzeigename",
+      "frankreich" : "Frankreich",
+      "england" : "England",
+      "deutschland" : "Deutschland",
+      "italien" : "Italien",
+      "belgien" : "Belgien",
+      "portugal" : "Portugal",
+      "spanien" : "Spanien",
+      "rumaenien" : "Rumänien",
+      "russland" : "Russland",
+      "ukraine" : "Ukraine",
+      "tschechien" : "Tschechien",
+      "island" : "Island",
+      "albanien" : "Albanien",
+      "wales" : "Wales",
+      "polen" : "Polen",
+      "tuerkei" : "Türkei",
+      "irland" : "Irland",
+      "oesterreich" : "Österreich",
+      "schweiz" : "Schweiz",
+      "slowakei" : "Slowakei",
+      "nordirland" : "Nordirland",
+      "kroatien" : "Kroatien",
+      "schweden" : "Schweden",
+      "ungarn" : "Ungarn",
+      "niederlande" : "Niederlande",
+      "griechenland" : "Griechenland",
+      "daenemark" : "Dänemark",
+      "bulgarien" : "Bulgarien",
+      "schottland" : "Schottland",
+      "lettland" : "Lettland",
+      "slowenien" : "Slowenien",
+      "norwegen" : "Norwegen"
     }
   ],
   [
-    {
+{
       "name" : "tore",
       "frankreich" : 49,
       "england" : 36,
@@ -671,7 +671,7 @@
       "jugoslawien" : 22,
       "tschechoslowakei" : 12
     },
-    {
+{
       "name" : "gegentore",
       "frankreich" : 39,
       "england" : 31,
@@ -710,7 +710,7 @@
       "jugoslawien" : 39,
       "tschechoslowakei" : 10
     },
-    {
+{
       "name" : "spielanzahl",
       "frankreich" : 32,
       "england" : 27,
@@ -749,7 +749,7 @@
       "jugoslawien" : 14,
       "tschechoslowakei" : 8
     },
-    {
+{
       "name" : "alter",
       "frankreich" : 28.1,
       "england" : 26.4,
@@ -788,7 +788,7 @@
       "jugoslawien" : 0,
       "tschechoslowakei" : 0
     },
-    {
+{
       "name" : "rot",
       "frankreich" : 0,
       "england" : 0,
@@ -827,7 +827,7 @@
       "jugoslawien" : 0,
       "tschechoslowakei" : 0
     },
-    {
+{
       "name" : "gelb",
       "frankreich" : 6,
       "england" : 5,
@@ -866,7 +866,7 @@
       "jugoslawien" : 0,
       "tschechoslowakei" : 0
     },
-    {
+{
       "name" : "qualifikationen",
       "frankreich" : 9,
       "england" : 9,
@@ -905,7 +905,7 @@
       "jugoslawien" : 5,
       "tschechoslowakei" : 3
     },
-    {
+{
       "name" : "marktwert",
       "frankreich" : 444.5,
       "england" : 352.5,
@@ -944,7 +944,7 @@
       "jugoslawien" : 0,
       "tschechoslowakei" : 0
     },
-    {
+{
       "name" : "kader",
       "frankreich" : 23,
       "england" : 21,
@@ -983,7 +983,7 @@
       "jugoslawien" : "",
       "tschechoslowakei" : ""
     },
-    {
+{
       "name" : "punkte",
       "frankreich" : 53,
       "england" : 36,
@@ -1022,7 +1022,7 @@
       "jugoslawien" : 11,
       "tschechoslowakei" : 12
     },
-    {
+{
       "name" : "siege",
       "frankreich" : 2,
       "england" : 0,
@@ -1061,7 +1061,7 @@
       "jugoslawien" : 0,
       "tschechoslowakei" : 1
     },
-    {
+{
       "name" : "",
       "frankreich" : 3,
       "england" : 1,
@@ -1100,7 +1100,7 @@
       "jugoslawien" : 1,
       "tschechoslowakei" : 0
     },
-    {
+{
       "name" : "twitter",
       "frankreich" : 40800,
       "england" : 21200,
@@ -1139,7 +1139,7 @@
       "jugoslawien" : 0,
       "tschechoslowakei" : 0
     },
-    {
+{
       "name" : "x",
       "frankreich" : 100,
       "england" : 216.5,
@@ -1178,7 +1178,7 @@
       "jugoslawien" : 0,
       "tschechoslowakei" : 0
     },
-    {
+{
       "name" : "y",
       "frankreich" : 556,
       "england" : 383.4,
@@ -1217,7 +1217,7 @@
       "jugoslawien" : 0,
       "tschechoslowakei" : 0
     },
-    {
+{
       "name" : "landsize",
       "frankreich" : 643801,
       "england" : 130395,

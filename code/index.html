@@ -35,17 +35,13 @@
       <input class="filter" type="radio" id="spielanzahl" name="selectFilter" />
       <label for="spielanzahl">spielanzahl</label>
     </div>
-    <div class="row">
-      <input class="filter" type="radio" id="alter" name="selectFilter" />
-      <label for="alter">alter</label>
-    </div>   
-    <div class="row">
-      <input class="filter" type="radio" id="rot" name="selectFilter" />
-      <label for="rot">rot</label>
+   <div class="row">
+      <input class="filter" type="radio" id="rotekarten" name="selectFilter" />
+      <label for="rotekarten">rote karten</label>
     </div> 
     <div class="row">
-      <input class="filter" type="radio" id="gelb" name="selectFilter" />
-      <label for="gelb">gelb</label>
+      <input class="filter" type="radio" id="gelbekarten" name="selectFilter" />
+      <label for="gelbekarten">gelbe karten</label>
     </div> 
     <div class="row">
       <input class="filter" type="radio" id="qualifikationen" name="selectFilter" />
@@ -71,11 +67,6 @@
       <input class="filter" type="radio" id="gastgeber" name="selectFilter" />
       <label for="gastgeber">gastgeber</label>
     </div>
-    <div class="row">
-      <input class="filter" type="radio" id="nationen" name="selectFilter" checked />
-      <label for="nationen">landesGröße</label>
-    </div>
-
     <div class="row">
       <input class="filter" type="radio" id="twitter" name="selectFilter" />
       <label for="twitter">twitter</label>
@@ -107,7 +98,7 @@
 
 </nav>
 
-<div class="infobox" id="infoBox" data-currentFilter="gegentore">
+<div class="infobox" id="infoBox" data-currentFilter="">
 
    <div class="tore-info">
     <h1>Das Runde muss ins Eckige</h1>
@@ -131,13 +122,13 @@
 <p>Deutschland ist für seine jungen Talente bekannt und stellt auch in dieser EM die Mannschaft mit dem niedrigsten Altersdurchschnitt von gerade einmal 25,7 Jahren (Stand 02. Mai 2016). Ohne Reus wird er nun noch niedriger sein! Die Altherren-Mannschaft kommt aus Russland, mit einem Altersdurchschnitt von 29,4 Jahren.</p>
   </div>
 
-      <div class="rot-info">
+      <div class="rotekarten-info">
 <h1>Wer früher duschen gehen darf</h1>
 <p>Während der EM 2012 wurden nur drei rote Karten verteilt, zwei davon gelb-rot. Die einzige Rote ging an Polen, und zwar ausgerechnet an den Torwart. Die Partie gegen Griechenland endete 1:1 mit nur noch 20 Spielern auf dem Platz, da auch Griechenland eine (gelb-)rote Karte kassierte.
 </p>
   </div>
 
-      <div class="gelb-info">
+      <div class="gelbekarten-info">
  <h1>Schiri macht ernst</h1>
 <p>Dass die Südländer am unfairsten spielen ist ein altes Vorurteil? Die Fakten belegen es ganz klar: Italien, Portugal und Spanien führen die Tabelle der am meisten mit Strafkarten geahndeten Fouls der letzten EM 2012 an. Sage und schreibe 16 gelbe Karten sammelte allein Italien! Insgesamt wurden während des Turniers 119 verteilt, von denen Deutschland nur vier bekam.
 </p>
@@ -164,10 +155,6 @@
 <p>In der ewigen Tabelle der Europameisterschaften steht nach der letzten EM 2012 - ja, Deutschland ganz vorne! 79 Punkte hat die Nationalmannschaft seit Beginn gesammelt. Für alle, die Fußball nur an E- und WMs schauen: ein Sieg beschert drei Punkte, für ein Unentschieden gibt es einen Punkt und bei einer Niederlage natürlich nichts. </p>
   </div>
 
-  
-
-
-
         <div class="gastgeber-info">
 <h1>Bienvenue!</h1>
 <p>Nicht nur die aktuelle, auch die allererste EM wurde in Frankreich gespielt. Mit der EM 1984 sind unsere Nachbarn damit schon zum dritten Mal Gastgeber und Spitzenreiter in dieser Kategorie. 
@@ -181,20 +168,63 @@ Deutschland kam erst einmal zum Zug, und zwar 1988. Vielleicht ist das aber gar 
 </p>
   </div>
 
-  <div class="siege-info>">
-    <h1>Echte Sieger-Typen</h1>
+           <div class="siege-info">
+<h1>#siege</h1>
 <p>Welches Land war in der Geschichte der EM bisher am erfolgreichsten? Diese Tabelle führte Deutschland lange mit drei Siegen an, in den letzten acht Jahren hat Spanien mit zwei Siegen 2008 und 2012 jedoch aufgeholt und sich damit die Trophäe nun ebenfalls dreimal geholt. Mit dem EM-Titel im eigenen Land könnte auch Frankreich aufschließen: sie haben bereits zwei Siege auf dem Konto. Auch die ehemalige UdSSR und die ehemalige Tschechoslowakei haben es geschafft, sich in der EM-Historie zu verewigen indem sie das Turnier je einmal gewannen.
 </p>
-</div>
-
-
+  </div> 
 
 
   <div id="countrieInfo">
     <h2>Niederlande</h2>
     <h3>283</h3>
+    <div class="tore-info">
   </div>
+  </div>
+
+  <div id="infoBox2" class="infobox infobox2">
+
+    <div class="tore-info">
+      <h1>Tore</h1>
+    </div>
+    <div class="gegentore-info">
+      <h1>gegentore</h1>
+    </div>
+    <div class="spielanzahl-info">
+      <h1>Spiele</h1>
+    </div>
+    <div class="rotekarten-info">
+      <h1>rote karten</h1>
+    </div>
+    <div class="gelbekarten-info">
+      <h1>gelbe karten</h1>
+    </div>
+    <div class="qualifikationen-info">
+      <h1>qualifikationen</h1>
+    </div>
+    <div class="marktwert-info">
+      <h1>marktwert</h1>
+      <h4>in mio EUR</h4>
+    </div>
+    <div class="kader-info">
+      <h1>Nationalspieler</h1>
+    </div>
+    <div class="punkte-info">
+      <h1>punkte</h1>
+    </div>
+    <div class="gastgeber-info">
+      <h1>x gastgeber</h1>
+    </div>
+    <div class="twitter-info">
+      <h1>tweets</h1>
+    </div>
+    <div class="siege-info">
+      <h1>siege</h1>
+    </div>
+
+  </div> 
 </div>
+
 
   <main id="statistikPlayground">
     
