@@ -25,10 +25,7 @@ body{
 }
 
 
-$color1: #ddd;
-$color2: #80838e;
-
-//____________________________PLAYGROUND
+/////////////////////////Playground
 
 main#statistikPlayground {
     width: 80%;
@@ -46,7 +43,7 @@ main#statistikPlayground:before {
 
 
 
-//____________________________BACKGROUND
+/////////////////////////BACKGROUND
 
 
 .map{
@@ -61,7 +58,7 @@ main#statistikPlayground:before {
 }
 
 
-//____________________________ANIMATIONS
+/////////////////////////INTRO
 
 @-webkit-keyframes logo-in {
   from {
@@ -179,7 +176,8 @@ main#statistikPlayground:before {
   opacity: 0;
 }
 
-//____________________________NAV
+/////////////////////////NAV
+
 
 nav{
       animation: fade .48s ease-in-out 6s forwards;
@@ -193,17 +191,39 @@ nav{
 
     }
 
+.holder {
 
-.logo{
-width:150px;
-transform: translateX( calc((170px - 150px) / 2) );
-padding-bottom:40px;
-
-   img{
-  width:100%;
-
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    perspective: 1px;
+    overflow:hidden;
+    //transform:scale(.8);
 }
-}  
+.bubbles{   
+ // animation: fade 0s ease-in-out 3.7s forwards, bubbles 2s ease-in-out 3.6s forwards;
+  opacity:0;
+  border-radius: 50%;
+  background-size: cover;
+  //transform-origin:50% 50%;
+  transition:all 1s;
+  transform: translateX(-50%) translateY(-50%) scale(0);  
+  position:absolute;
+ // top:0;
+  //left:0;  
+}
+
+
+.animationFinish .bubbles{
+  opacity:1;
+  transform: translateX(-50%) translateY(-50%) scale(1);  
+}
+
 
 aside{
 position:relative;
@@ -227,9 +247,9 @@ label{
   padding-left:40px;
   margin-bottom:4px;
   transition:.1s ease-in-out;
-  color:$color1;
+  color:#ddd;
   text-transform:uppercase;
-  font-size:.8em;
+  font-size:.7em;
   letter-spacing:.1em;
   font-weight:200;
 }
@@ -256,6 +276,51 @@ input[type=radio]:checked + label:before {
 }
 
 
+
+/**
+
+button{
+position:relative;
+z-index:2;
+background:#424760;
+border: none;
+width:170px;
+height:28px;
+display:block;
+text-align:left;
+padding-left:12px;
+margin-bottom:4px;
+color:#ddd;
+text-transform:uppercase;
+font-size:.7em;
+letter-spacing:.1em;
+font-weight:200;
+cursor:pointer;
+transition:.1s ease-in-out;
+border-left: 28px solid #2c344f;
+}
+
+  button:hover{
+  border-left: 28px solid #058baa;  
+  }
+
+  button:active,button:focus{
+  border-left: 28px solid #058baa; 
+  outline: none;
+  }
+*/
+
+.logo{
+width:150px;
+transform: translateX( calc((170px - 150px) / 2) );
+padding-bottom:40px;
+
+   img{
+  width:100%;
+
+}
+}
+
 #share-buttons{
   padding-left: 38px;
   padding-top: 15px;
@@ -266,92 +331,12 @@ input[type=radio]:checked + label:before {
   text-decoration: none;
   }
 
-  img{
+}
+
+
+#share-buttons img{
   
   width: 30px;
+   text-decoration: none;
 }
 
-}
-
-
-
-
-
-//____________________________COUNTRIES
-
-.holder {
-
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 100%;
-    height: 100%;
-    transform-style: preserve-3d;
-    perspective: 1px;
-    overflow:hidden;
-}
-.bubbles{   
-  opacity:0;
-  border-radius: 50%;
-  background-size: cover;
-  transition:all 1s;
-  transform: translateX(-50%) translateY(-50%) scale(0);  
-  position:absolute; 
-}
-
-
-.animationFinish .bubbles{
-  opacity:1;
-  transform: translateX(-50%) translateY(-50%) scale(1);  
-}
-
-
-
-
-
-//____________________________INFOBOX
-
-
-.infobox{
-
-  position:absolute;
-  right:0;
-  top: 0;
-  padding: 4% 2%;
-  width:300px;
-  text-align: right;
-
-  h1{
-  font-size:1.1em;
-  color:$color1;
-  text-transform:uppercase;
-  padding-top:10px;
-  letter-spacing: .07em;
-  }
-
-  p{
-  font-size:.9em;
-  color:$color2;
-  letter-spacing: .01em;
-  }
-
-  h2{
-  font-size:.8em;
-  color:$color1;
-  text-transform:uppercase;
-  padding-top:20px;
-  letter-spacing: .1em;
-  }
-
-  h3{
-  font-size:2em;
-  color:$color1;
-  text-transform:uppercase;
-  margin: 0;
-  }
-
-
-
-}
