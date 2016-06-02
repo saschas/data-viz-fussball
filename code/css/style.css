@@ -138,3 +138,13 @@ button:active, button:focus {
   top: 0;
   bottom: 0;
   position: absolute; }
+
+#share-buttons img {
+  width: 35px;
+  padding: 3px;
+  border: 0;
+  box-shadow: 0;
+  display: inline; }
+
+#distance {
+  padding-left: 42px; }
