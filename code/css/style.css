@@ -21,101 +21,87 @@ body {
 .tore-info {
   display: none; }
 
-#infoBox[data-currentFilter=tore] .tore-info {
+#infoBox[data-currentfilter=tore] .tore-info {
   display: block; }
 
-/* We create `$selector` */
 .gegentore-info {
   display: none; }
 
-#infoBox[data-currentFilter=gegentore] .gegentore-info {
+#infoBox[data-currentfilter=gegentore] .gegentore-info {
   display: block; }
 
-/* We create `$selector` */
 .spielanzahl-info {
   display: none; }
 
-#infoBox[data-currentFilter=spielanzahl] .spielanzahl-info {
+#infoBox[data-currentfilter=spielanzahl] .spielanzahl-info {
   display: block; }
 
-/* We create `$selector` */
 .alter-info {
   display: none; }
 
-#infoBox[data-currentFilter=alter] .alter-info {
+#infoBox[data-currentfilter=alter] .alter-info {
   display: block; }
 
-/* We create `$selector` */
 .rot-info {
   display: none; }
 
-#infoBox[data-currentFilter=rot] .rot-info {
+#infoBox[data-currentfilter=rot] .rot-info {
   display: block; }
 
-/* We create `$selector` */
 .gelb-info {
   display: none; }
 
-#infoBox[data-currentFilter=gelb] .gelb-info {
+#infoBox[data-currentfilter=gelb] .gelb-info {
   display: block; }
 
-/* We create `$selector` */
 .qualifikationen-info {
   display: none; }
 
-#infoBox[data-currentFilter=qualifikationen] .qualifikationen-info {
+#infoBox[data-currentfilter=qualifikationen] .qualifikationen-info {
   display: block; }
 
-/* We create `$selector` */
 .marktwert-info {
   display: none; }
 
-#infoBox[data-currentFilter=marktwert] .marktwert-info {
+#infoBox[data-currentfilter=marktwert] .marktwert-info {
   display: block; }
 
-/* We create `$selector` */
 .kader-info {
   display: none; }
 
-#infoBox[data-currentFilter=kader] .kader-info {
+#infoBox[data-currentfilter=kader] .kader-info {
   display: block; }
 
-/* We create `$selector` */
 .punkte-info {
   display: none; }
 
-#infoBox[data-currentFilter=punkte] .punkte-info {
+#infoBox[data-currentfilter=punkte] .punkte-info {
   display: block; }
 
-/* We create `$selector` */
 .siege-info {
   display: none; }
 
-#infoBox[data-currentFilter=siege] .siege-info {
+#infoBox[data-currentfilter=siege] .siege-info {
   display: block; }
 
-/* We create `$selector` */
 .gastgeber-info {
   display: none; }
 
-#infoBox[data-currentFilter=gastgeber] .gastgeber-info {
+#infoBox[data-currentfilter=gastgeber] .gastgeber-info {
   display: block; }
 
-/* We create `$selector` */
 .twitter-info {
   display: none; }
 
-#infoBox[data-currentFilter=twitter] .twitter-info {
+#infoBox[data-currentfilter=twitter] .twitter-info {
   display: block; }
 
-/* We create `$selector` */
 .nationen-info {
   display: none; }
 
-#infoBox[data-currentFilter=nationen] .nationen-info {
+#infoBox[data-currentfilter=nationen] .nationen-info {
   display: block; }
 
-/* We create `$selector` */
 main#statistikPlayground {
   width: 80%;
   position: relative;
@@ -142,51 +128,43 @@ main#statistikPlayground:before {
     transform: scale(0.48); }
   to {
     transform: scale(1); } }
-
 @-webkit-keyframes logo-out {
   from {
     opacity: 1; }
   to {
     opacity: 0; } }
-
 @-webkit-keyframes bubbles {
   from {
     transform: scale(0); }
   to {
     transform: scale(1); } }
-
 @-webkit-keyframes fade {
   from {
     opacity: 0; }
   to {
     opacity: 1; } }
-
 @keyframes logo-in {
   from {
     transform: scale(0.48); }
   to {
     transform: scale(1); } }
-
 @keyframes logo-out {
   from {
     opacity: 1; }
   to {
     opacity: 0; } }
-
 @keyframes bubbles {
   from {
     transform: scale(0); }
   to {
     transform: scale(1); } }
-
 @keyframes fade {
   from {
     opacity: 0; }
   to {
     opacity: 1; } }
-
 #intro {
-  animation: logo-in 1.48s ease-in-out 0.4s forwards, logo-out 0.48s ease-in-out 3s forwards;
+  animation: logo-in 1.48s ease-in-out .4s forwards, logo-out .48s ease-in-out 3s forwards;
   transform: scale(0.48);
   position: absolute;
   width: 100%;
@@ -209,15 +187,15 @@ main#statistikPlayground:before {
   display: none; }
 
 .no-animation .map {
-  animation: fade 0.48s ease-in-out forwards;
+  animation: fade .48s ease-in-out forwards;
   opacity: 0; }
 
 .no-animation nav, .no-animation .infobox {
-  animation: fade 0.24s ease-in-out forwards;
+  animation: fade .24s ease-in-out forwards;
   opacity: 0; }
 
 nav {
-  animation: fade 0.48s ease-in-out 6s forwards;
+  animation: fade .48s ease-in-out 6s forwards;
   opacity: 0;
   position: absolute;
   top: 0;
@@ -307,7 +285,7 @@ input[type=radio]:checked + label:before {
   transform: translateX(-50%) translateY(-50%) scale(1); }
 
 .infobox {
-  animation: fade 0.48s ease-in-out 6s forwards;
+  animation: fade .48s ease-in-out 6s forwards;
   opacity: 0;
   position: absolute;
   right: 0;

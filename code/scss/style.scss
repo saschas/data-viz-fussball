@@ -35,10 +35,9 @@ $options : 'tore', 'gegentore', 'spielanzahl', 'alter', 'rot', 'gelb', 'qualifik
   .#{$item}-info{
     display: none;
   }
-  #infoBox[data-currentFilter=#{$item}] .#{$item}-info{
+  #infoBox[data-currentfilter=#{$item}] .#{$item}-info{
     display: block;
   }
-  /* We create `$selector` */
 }
 
 //____________________________PLAYGROUND
