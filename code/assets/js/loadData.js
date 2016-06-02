@@ -502,4 +502,4 @@ function animate(time) {
 TweenMax.set("#map", {scale:2})
 
 tl = new TimelineLite();
-  tl.to("#map", 4.4, {transformOrigin: "center center", scale:0.8, ease:Sine.easeIn})
+  tl.to("#map", 4.4, {transformOrigin: "center center", scale:1, ease:Sine.easeIn})
