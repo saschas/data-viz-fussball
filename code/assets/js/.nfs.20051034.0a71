@@ -255,8 +255,8 @@ function buildDataViz(data){
   var boxHeight = 1200;
 
   var offset = {
-    x : 30,
-    y : 100,
+    x : 66,
+    y : 0,
   }
 
 

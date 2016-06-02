@@ -28,7 +28,7 @@ body{
 /////////////////////////Playground
 
 main#statistikPlayground {
-    width: 80%;
+    width: 100%;
     position: relative;
     margin: auto;
     top: 50%;
@@ -244,7 +244,7 @@ label{
   line-height:28px;
   display:block;
   position:relative;
-  padding-left:40px;
+  padding-left:60px;
   margin-bottom:4px;
   transition:.1s ease-in-out;
   color:#ddd;
@@ -267,7 +267,7 @@ label:before{
   width:28px;
   height:28px;
   left:0;
-  background:#101016;
+  background:#000;
 }
 
 input[type=radio]:checked + label:before {
@@ -321,13 +321,4 @@ padding-bottom:40px;
 }
 }
 
-#share-buttons{
-  padding-left: 38px;
-  padding-top: 15px;
 
-}
-
-#share-buttons img{
-  
-  width: 30px;
-}
