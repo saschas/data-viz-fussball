@@ -79,12 +79,15 @@ if(!visitedCookie){
 //_____________________________________ Variable 
 
 
-var statistikKey = 'tore';
+var statistikKey = 'nationen';
 var maxHelper = {};
 var maxRadius = 148;
 var minRadius = 10;
 var visualisationData = {};
 
+var infoBox = document.getElementById('infoBox');
+var countrieInfo = document.getElementById('countrieInfo');
+var logo = document.getElementById('nationen');
 var statistikPlayground = document.getElementById('statistikPlayground');
 
 
@@ -102,7 +105,7 @@ var options = [
   'siege',
   'gastgeber',
   'twitter',
-  'landsize'
+  'nationen'
 ]
 
 
@@ -226,6 +229,8 @@ function buildCircle (holder,opt) {
 
   holder.appendChild(c);
 
+
+
    c.classList.add('bubbles');
 
 
@@ -236,11 +241,27 @@ function buildCircle (holder,opt) {
   // var transformOrigin = "transform-origin: 50% 50%;";
 
    c.setAttribute('style', 'width:'+c.radius + 'px;height:'+c.radius+'px;' + topProperty + leftProperty + backgroundImage );
-  
-  c.setAttribute('name', opt.name);
-  c.setAttribute('id', 'bubble' + opt.name);
+    c.setAttribute('name', opt.name);
+    c.setAttribute('id', 'bubble' + opt.name);
+
+
+
+
+  c.addEventListener('mouseenter',getSetDataInfo);
 
   return c;
+}
+
+
+function getSetDataInfo(e) {
+  console.log(this.msg);
+
+  var h2 = document.createElement('h2');
+  var h3 = document.createElement('h3');
+
+
+  countrieInfo.innerHTML = '<h2>' + this.msg.anzeigeName + '</h2><h3>'+ this.msg.absolute+'</h3>';
+
 }
 
 
@@ -255,8 +276,8 @@ function buildDataViz(data){
   var boxHeight = 1200;
 
   var offset = {
-    x : 30,
-    y : 100,
+    x : 0,
+    y : 0,
   }
 
 
@@ -283,7 +304,10 @@ function buildDataViz(data){
             y : data[key].y + offset.y,
             radius: getPercentageOfKey(statistikKey, data[key]),
             name : key,
-            msg : 'hallo ',
+            msg : {
+              absolute : data[key][statistikKey],
+              anzeigeName : data[key].anzeigeName
+            },
             color : getRandomColor()
         }
         
@@ -317,6 +341,8 @@ function changeKey(targetKey){
         visualisationData[key].circle.radius = targetValue;
         statistikKey = targetKey;
 
+        infoBox.dataset.currentfilter = statistikKey;
+
       }
     }
     
@@ -335,7 +361,7 @@ for(var i=0;i<inputFields.length;i++){
   
 }
 
-
+logo.addEventListener('click',actionButton);
 
 
 // var buttonHolder = document.getElementById('options');
