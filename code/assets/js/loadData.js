@@ -260,7 +260,7 @@ function getSetDataInfo(e) {
   var h3 = document.createElement('h3');
 
 
-  countrieInfo.innerHTML = '<h2>' + this.msg.anzeigename + '</h2><h3>'+ this.msg.absolute+'</h3>';
+  countrieInfo.innerHTML = '<h2>' + this.msg.anzeigeName + '</h2><h3>'+ this.msg.absolute+'</h3>';
 
 }
 
@@ -306,7 +306,7 @@ function buildDataViz(data){
             name : key,
             msg : {
               absolute : data[key][statistikKey],
-              anzeigename : data[key].anzeigename
+              anzeigeName : data[key].anzeigeName
             },
             color : getRandomColor()
         }
