@@ -180,9 +180,9 @@ border-left: 28px solid #2c344f;
   }
 */
 .logo {
-  width: 150px;
+  width: 170px;
   transform: translateX(calc((170px - 150px) / 2));
-  padding-bottom: 40px; }
+  padding-bottom: 30px; }
   .logo img {
     width: 100%; }
 
@@ -195,7 +195,7 @@ border-left: 28px solid #2c344f;
 
 div#share-buttons {
   padding-left: 38px;
-  padding-top: 4px; }
+  padding-top: 7px; }
 
 #share-buttons img {
   width: 35px;
