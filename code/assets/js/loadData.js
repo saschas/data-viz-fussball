@@ -248,6 +248,7 @@ function buildCircle (holder,opt) {
 
 
   c.addEventListener('mouseenter',getSetDataInfo);
+  c.addEventListener('click',getSetDataInfo);
 
   return c;
 }
