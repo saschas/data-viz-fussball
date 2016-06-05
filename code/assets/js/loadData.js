@@ -441,8 +441,18 @@ function animate(time) {
 
 
 //_____________________________________ mobile
+ 
 
 
+
+$('#menu').click(function() {
+    $('aside').removeClass("aside-menu");
+    $('#menu').fadeOut(0)
+});
+
+var mq = window.matchMedia("(max-width:800px)")
+
+if(mq.matches){
 $('.row').click(function() {
     $('aside').addClass("aside-menu");
     $(this).delay(1001)
@@ -453,11 +463,11 @@ $('.row').click(function() {
 
 });
 
-$('#menu').click(function() {
-    $('aside').removeClass("aside-menu");
-    $('#menu').fadeOut(0)
 
-});
+
+}
+
+
 
 
 

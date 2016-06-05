@@ -212,7 +212,6 @@ nav{
       position: absolute;
       top:0;
       z-index: 9;
-      width:134px;
       padding:4% 2%;
       
 
@@ -532,8 +531,7 @@ footer{
     width: 100%;
     height:100%;
     top: -0%;
-    transform: translateY(0);
-    transform: translateX(100px);
+    transform: translateY(-10px) translateX(60px);
 }
 
   .animationFinish .bubbles {
@@ -542,7 +540,7 @@ footer{
   }
 
   nav{
-  width:200px;
+  width:0;
   padding:0;
   position: absolute;
   }
