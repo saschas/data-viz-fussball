@@ -174,7 +174,7 @@ main#statistikPlayground:before {
    
   .intro-logo{
     position:absolute;
-  z-index:99;
+    z-index:99;
     width:400px;
     height:400px;
     left:0;
@@ -524,6 +524,11 @@ footer{
 
   body{
   overflow:scroll;
+  }
+
+  #intro .intro-logo{
+   width:200px;
+   height:200px;
   }
 
   main#statistikPlayground {

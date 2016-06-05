@@ -609,6 +609,10 @@ footer #impressum {
   body {
     overflow: scroll;
   }
+  #intro .intro-logo {
+    width: 200px;
+    height: 200px;
+  }
   main#statistikPlayground {
     position: fixed;
     width: 100%;
