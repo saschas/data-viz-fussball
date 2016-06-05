@@ -440,6 +440,25 @@ function animate(time) {
 
 
 
+//_____________________________________ mobile
+
+
+$('.row').click(function() {
+    $('aside').addClass("aside-menu");
+    $(this).delay(1001)
+    .queue(function() {
+    $('#menu').fadeIn(200)
+    $(this).dequeue();
+                       });
+
+});
+
+$('#menu').click(function() {
+    $('aside').removeClass("aside-menu");
+    $('#menu').fadeOut(0)
+
+});
+
 
 
 
